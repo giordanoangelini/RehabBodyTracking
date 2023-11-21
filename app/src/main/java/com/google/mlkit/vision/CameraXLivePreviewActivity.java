@@ -47,12 +47,12 @@ import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory;
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.mlkit.common.MlKitException;
 import com.google.mlkit.vision.demo.R;
-import com.google.mlkit.vision.java.CameraXViewModel;
-import com.google.mlkit.vision.java.GraphicOverlay;
-import com.google.mlkit.vision.java.VisionImageProcessor;
-import com.google.mlkit.vision.java.posedetector.PoseDetectorProcessor;
-import com.google.mlkit.vision.java.preference.PreferenceUtils;
-import com.google.mlkit.vision.java.preference.SettingsActivity;
+import com.google.mlkit.vision.posedetection.CameraXViewModel;
+import com.google.mlkit.vision.posedetection.GraphicOverlay;
+import com.google.mlkit.vision.posedetection.VisionImageProcessor;
+import com.google.mlkit.vision.posedetection.posedetector.PoseDetectorProcessor;
+import com.google.mlkit.vision.posedetection.preference.PreferenceUtils;
+import com.google.mlkit.vision.posedetection.preference.SettingsActivity;
 import com.google.mlkit.vision.pose.PoseDetectorOptionsBase;
 
 import java.util.ArrayList;

@@ -662,7 +662,7 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="androidx_camera_default_config_provider" translatable="false"/>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
-    <string name="app_name" translatable="false">MLKit-Vision</string>
+    <string name="app_name" translatable="false">MLKit-BodyTracking</string>
     <string name="application_entry_point" translatable="false">Start</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>

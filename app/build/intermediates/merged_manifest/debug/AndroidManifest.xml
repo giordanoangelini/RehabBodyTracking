@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.mlkit.vision.demo"
+    package="com.google.mlkit.vision"
     android:installLocation="auto"
     android:versionCode="11"
     android:versionName="1.11" >
@@ -35,10 +35,10 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <permission
-        android:name="com.google.mlkit.vision.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.google.mlkit.vision.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.google.mlkit.vision.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.google.mlkit.vision.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:name="androidx.multidex.MultiDexApplication"
@@ -150,7 +150,7 @@
 
         <provider
             android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-            android:authorities="com.google.mlkit.vision.demo.mlkitinitprovider"
+            android:authorities="com.google.mlkit.vision.mlkitinitprovider"
             android:exported="false"
             android:initOrder="99" />
 
@@ -161,7 +161,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.google.mlkit.vision.demo.androidx-startup"
+            android:authorities="com.google.mlkit.vision.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.work.WorkManagerInitializer"

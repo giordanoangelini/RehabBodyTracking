@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.google.mlkit.vision.demo"
+3    package="com.google.mlkit.vision"
 4    android:installLocation="auto"
 5    android:versionCode="11"
 6    android:versionName="1.11" >
@@ -59,12 +59,12 @@
 36
 37    <permission
 37-->[androidx.core:core:1.9.0] /Users/giordano/.gradle/caches/transforms-3/84ae49216def1d4f978d2c6eb6d9b10c/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-38        android:name="com.google.mlkit.vision.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+38        android:name="com.google.mlkit.vision.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 38-->[androidx.core:core:1.9.0] /Users/giordano/.gradle/caches/transforms-3/84ae49216def1d4f978d2c6eb6d9b10c/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
 39        android:protectionLevel="signature" />
 39-->[androidx.core:core:1.9.0] /Users/giordano/.gradle/caches/transforms-3/84ae49216def1d4f978d2c6eb6d9b10c/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
 40
-41    <uses-permission android:name="com.google.mlkit.vision.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+41    <uses-permission android:name="com.google.mlkit.vision.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 41-->[androidx.core:core:1.9.0] /Users/giordano/.gradle/caches/transforms-3/84ae49216def1d4f978d2c6eb6d9b10c/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
 41-->[androidx.core:core:1.9.0] /Users/giordano/.gradle/caches/transforms-3/84ae49216def1d4f978d2c6eb6d9b10c/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 42
@@ -272,7 +272,7 @@
 151-->[com.google.mlkit:common:18.10.0] /Users/giordano/.gradle/caches/transforms-3/9f7f32d8a3d7a3868432c2e1f842b0cf/transformed/jetified-common-18.10.0/AndroidManifest.xml:9:9-13:38
 152            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
 152-->[com.google.mlkit:common:18.10.0] /Users/giordano/.gradle/caches/transforms-3/9f7f32d8a3d7a3868432c2e1f842b0cf/transformed/jetified-common-18.10.0/AndroidManifest.xml:10:13-78
-153            android:authorities="com.google.mlkit.vision.demo.mlkitinitprovider"
+153            android:authorities="com.google.mlkit.vision.mlkitinitprovider"
 153-->[com.google.mlkit:common:18.10.0] /Users/giordano/.gradle/caches/transforms-3/9f7f32d8a3d7a3868432c2e1f842b0cf/transformed/jetified-common-18.10.0/AndroidManifest.xml:11:13-69
 154            android:exported="false"
 154-->[com.google.mlkit:common:18.10.0] /Users/giordano/.gradle/caches/transforms-3/9f7f32d8a3d7a3868432c2e1f842b0cf/transformed/jetified-common-18.10.0/AndroidManifest.xml:12:13-37
@@ -292,7 +292,7 @@
 162-->[androidx.work:work-runtime:2.7.0] /Users/giordano/.gradle/caches/transforms-3/1e2201a8603c733c058ea26a138b6827/transformed/work-runtime-2.7.0/AndroidManifest.xml:31:9-39:20
 163            android:name="androidx.startup.InitializationProvider"
 163-->[androidx.work:work-runtime:2.7.0] /Users/giordano/.gradle/caches/transforms-3/1e2201a8603c733c058ea26a138b6827/transformed/work-runtime-2.7.0/AndroidManifest.xml:32:13-67
-164            android:authorities="com.google.mlkit.vision.demo.androidx-startup"
+164            android:authorities="com.google.mlkit.vision.androidx-startup"
 164-->[androidx.work:work-runtime:2.7.0] /Users/giordano/.gradle/caches/transforms-3/1e2201a8603c733c058ea26a138b6827/transformed/work-runtime-2.7.0/AndroidManifest.xml:33:13-68
 165            android:exported="false" >
 165-->[androidx.work:work-runtime:2.7.0] /Users/giordano/.gradle/caches/transforms-3/1e2201a8603c733c058ea26a138b6827/transformed/work-runtime-2.7.0/AndroidManifest.xml:34:13-37
