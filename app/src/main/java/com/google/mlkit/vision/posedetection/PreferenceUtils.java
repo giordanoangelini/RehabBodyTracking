@@ -29,7 +29,7 @@ import com.google.common.base.Preconditions;
 import com.google.mlkit.common.model.LocalModel;
 import com.google.mlkit.vision.posedetection.CameraSource;
 import com.google.mlkit.vision.posedetection.CameraSource.SizePair;
-import com.google.mlkit.vision.demo.R;
+import com.google.mlkit.vision.R;
 import com.google.mlkit.vision.face.FaceDetectorOptions;
 import com.google.mlkit.vision.facemesh.FaceMeshDetectorOptions;
 import com.google.mlkit.vision.objects.ObjectDetectorOptionsBase.DetectorMode;

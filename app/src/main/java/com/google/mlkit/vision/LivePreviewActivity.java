@@ -24,7 +24,6 @@ import android.widget.Toast;
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.mlkit.vision.posedetection.CameraSource;
 import com.google.mlkit.vision.posedetection.CameraSourcePreview;
-import com.google.mlkit.vision.demo.R;
 import com.google.mlkit.vision.posedetection.GraphicOverlay;
 import com.google.mlkit.vision.posedetection.posedetector.PoseDetectorProcessor;
 import com.google.mlkit.vision.posedetection.PreferenceUtils;

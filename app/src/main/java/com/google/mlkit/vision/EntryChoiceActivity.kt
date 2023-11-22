@@ -26,8 +26,6 @@ import android.util.Log
 import android.widget.TextView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.google.mlkit.vision.ChooserActivity
-import com.google.mlkit.vision.demo.R
 import java.util.ArrayList
 
 class EntryChoiceActivity : AppCompatActivity(), ActivityCompat.OnRequestPermissionsResultCallback {

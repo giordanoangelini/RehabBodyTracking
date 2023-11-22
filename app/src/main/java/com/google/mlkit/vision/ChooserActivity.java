@@ -34,8 +34,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.mlkit.vision.demo.R;
-
 /** Demo app chooser which allows you pick from all available testing Activities. */
 public final class ChooserActivity extends AppCompatActivity
     implements AdapterView.OnItemClickListener {
