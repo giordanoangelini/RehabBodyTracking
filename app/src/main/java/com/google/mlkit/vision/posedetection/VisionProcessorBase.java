@@ -42,7 +42,7 @@ import com.google.android.odml.image.MediaMlImageBuilder;
 import com.google.android.odml.image.MlImage;
 import com.google.mlkit.common.MlKitException;
 import com.google.mlkit.vision.common.InputImage;
-import com.google.mlkit.vision.posedetection.preference.PreferenceUtils;
+
 import java.nio.ByteBuffer;
 import java.util.Timer;
 import java.util.TimerTask;

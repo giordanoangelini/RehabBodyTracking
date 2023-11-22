@@ -54,12 +54,6 @@
         </activity>
 
         <activity
-            android:name="com.google.mlkit.vision.CameraXLivePreviewActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
             android:name="com.google.mlkit.vision.posedetection.preference.SettingsActivity"
             android:exported="false"
             android:theme="@style/AppTheme">

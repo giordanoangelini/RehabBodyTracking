@@ -872,9 +872,6 @@ int drawable common_google_signin_btn_text_light_normal 0x7f080068
 int drawable common_google_signin_btn_text_light_normal_background 0x7f080069
 int drawable googleg_disabled_color_18 0x7f08006a
 int drawable googleg_standard_color_18 0x7f08006b
-int drawable ic_settings_white_24dp 0x7f08006c
-int drawable ic_switch_camera_white_48dp 0x7f08006d
-int drawable ic_switch_camera_white_48dp_inset 0x7f08006e
 int drawable list_item_background 0x7f08006f
 int drawable logo_mlkit 0x7f080070
 int drawable notification_action_background 0x7f080071
@@ -989,7 +986,6 @@ int id chronometer 0x7f09005d
 int id collapseActionView 0x7f09005e
 int id content 0x7f09005f
 int id contentPanel 0x7f090060
-int id control 0x7f090061
 int id cos 0x7f090062
 int id custom 0x7f090063
 int id customPanel 0x7f090064
@@ -1019,7 +1015,6 @@ int id edit_query 0x7f09007b
 int id end 0x7f09007c
 int id expand_activities_button 0x7f09007d
 int id expanded_menu 0x7f09007e
-int id facing_switch 0x7f09007f
 int id fillCenter 0x7f090080
 int id fillEnd 0x7f090081
 int id fillStart 0x7f090082
@@ -1110,9 +1105,6 @@ int id search_plate 0x7f0900d6
 int id search_src_text 0x7f0900d7
 int id search_voice_btn 0x7f0900d8
 int id select_dialog_listview 0x7f0900d9
-int id select_images_from_local 0x7f0900da
-int id settings_button 0x7f0900db
-int id settings_container 0x7f0900dc
 int id shortcut 0x7f0900dd
 int id showCustom 0x7f0900de
 int id showHome 0x7f0900df
@@ -1120,7 +1112,6 @@ int id showTitle 0x7f0900e0
 int id sin 0x7f0900e1
 int id spacer 0x7f0900e2
 int id special_effects_controller_view_tag 0x7f0900e3
-int id spinner 0x7f0900e4
 int id spline 0x7f0900e5
 int id split_action_bar 0x7f0900e6
 int id spread 0x7f0900e7
@@ -1152,7 +1143,6 @@ int id tag_transition_group 0x7f090100
 int id tag_unhandled_key_event_manager 0x7f090101
 int id tag_unhandled_key_listeners 0x7f090102
 int id tag_window_insets_animation_callback 0x7f090103
-int id take_photo_using_camera 0x7f090104
 int id test_activity_list_view 0x7f090105
 int id text 0x7f090106
 int id text2 0x7f090107
@@ -1225,8 +1215,6 @@ int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout activity_chooser 0x7f0c001c
-int layout activity_settings 0x7f0c001d
-int layout activity_vision_camerax_live_preview 0x7f0c001e
 int layout activity_vision_entry_choice 0x7f0c001f
 int layout activity_vision_live_preview 0x7f0c0020
 int layout custom_dialog 0x7f0c0021
@@ -1239,11 +1227,7 @@ int layout notification_template_part_time 0x7f0c0027
 int layout select_dialog_item_material 0x7f0c0028
 int layout select_dialog_multichoice_material 0x7f0c0029
 int layout select_dialog_singlechoice_material 0x7f0c002a
-int layout settings_style 0x7f0c002b
-int layout spinner_style 0x7f0c002c
 int layout support_simple_spinner_dropdown_item 0x7f0c002d
-int layout toggle_style 0x7f0c002e
-int menu camera_button_menu 0x7f0d0000
 int mipmap ic_launcher 0x7f0e0000
 int string abc_action_bar_home_description 0x7f0f0000
 int string abc_action_bar_up_description 0x7f0f0001
@@ -2846,5 +2830,3 @@ int[] styleable ViewStubCompat { 0x010100d0, 0x010100f2, 0x010100f3 }
 int styleable ViewStubCompat_android_id 0
 int styleable ViewStubCompat_android_layout 1
 int styleable ViewStubCompat_android_inflatedId 2
-int xml preference_live_preview_quickstart 0x7f120000
-int xml preference_still_image 0x7f120001

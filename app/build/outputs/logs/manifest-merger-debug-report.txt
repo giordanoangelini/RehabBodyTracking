@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-75:12
+ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-69:12
 MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/1d5b75270104870b3fc64375e070f2f5/transformed/jetified-pose-detection-18.0.0-beta3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/f22ef8517d4e91baafb34f3e7cd9ea55/transformed/jetified-pose-detection-accurate-18.0.0-beta3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/1bfc08d3eaa7b444f41b061f81a407b7/transformed/jetified-pose-detection-common-18.0.0-beta3/AndroidManifest.xml:2:1-35:12
@@ -325,8 +325,8 @@ ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/Android
 	android:name
 		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:22:22-62
 application
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:24:5-68:19
-INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:24:5-68:19
+ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:24:5-62:19
+INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:24:5-62:19
 MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/1d5b75270104870b3fc64375e070f2f5/transformed/jetified-pose-detection-18.0.0-beta3/AndroidManifest.xml:7:5-20
 MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/1d5b75270104870b3fc64375e070f2f5/transformed/jetified-pose-detection-18.0.0-beta3/AndroidManifest.xml:7:5-20
 MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/f22ef8517d4e91baafb34f3e7cd9ea55/transformed/jetified-pose-detection-accurate-18.0.0-beta3/AndroidManifest.xml:7:5-20
@@ -447,30 +447,22 @@ ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/Android
 		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:53:13-44
 	android:name
 		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:51:13-71
-activity#com.google.mlkit.vision.CameraXLivePreviewActivity
+activity#com.google.mlkit.vision.posedetection.preference.SettingsActivity
 ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:56:9-60:20
 	android:exported
 		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:58:13-37
 	android:theme
 		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:59:13-44
 	android:name
-		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:57:13-78
-activity#com.google.mlkit.vision.posedetection.preference.SettingsActivity
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:62:9-66:20
-	android:exported
-		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:64:13-37
-	android:theme
-		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:65:13-44
-	android:name
-		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:63:13-93
+		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:57:13-93
 queries
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:69:5-73:15
+ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:63:5-67:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:70:9-72:18
+ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:64:9-66:18
 action#android.media.action.IMAGE_CAPTURE
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:71:13-73
+ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:65:13-73
 	android:name
-		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:71:21-70
+		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:65:21-70
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/1bfc08d3eaa7b444f41b061f81a407b7/transformed/jetified-pose-detection-common-18.0.0-beta3/AndroidManifest.xml:7:5-79
 MERGED from [com.google.mlkit:object-detection:17.0.0] /Users/giordano/.gradle/caches/transforms-3/3aeada17da5e8f8d989ca5a69f39f5bb/transformed/jetified-object-detection-17.0.0/AndroidManifest.xml:7:5-79

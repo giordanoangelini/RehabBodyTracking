@@ -16,32 +16,21 @@
 
 package com.google.mlkit.vision;
 
-import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ArrayAdapter;
-import android.widget.CompoundButton;
-import android.widget.ImageView;
-import android.widget.Spinner;
 import android.widget.Toast;
-import android.widget.ToggleButton;
+
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.mlkit.vision.posedetection.CameraSource;
 import com.google.mlkit.vision.posedetection.CameraSourcePreview;
 import com.google.mlkit.vision.demo.R;
 import com.google.mlkit.vision.posedetection.GraphicOverlay;
 import com.google.mlkit.vision.posedetection.posedetector.PoseDetectorProcessor;
-import com.google.mlkit.vision.posedetection.preference.PreferenceUtils;
-import com.google.mlkit.vision.posedetection.preference.SettingsActivity;
+import com.google.mlkit.vision.posedetection.PreferenceUtils;
 import com.google.mlkit.vision.pose.PoseDetectorOptionsBase;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 @KeepName
 public final class LivePreviewActivity extends AppCompatActivity {
