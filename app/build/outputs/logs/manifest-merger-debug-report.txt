@@ -1,52 +1,26 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-69:12
-INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-69:12
-INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-69:12
-INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-69:12
+ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:2:1-63:12
 MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/1d5b75270104870b3fc64375e070f2f5/transformed/jetified-pose-detection-18.0.0-beta3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/f22ef8517d4e91baafb34f3e7cd9ea55/transformed/jetified-pose-detection-accurate-18.0.0-beta3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/1bfc08d3eaa7b444f41b061f81a407b7/transformed/jetified-pose-detection-common-18.0.0-beta3/AndroidManifest.xml:2:1-35:12
 MERGED from [com.google.mlkit:acceleration:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/0d876b951d3e59df1eae6dc18af89b11/transformed/jetified-acceleration-16.0.0-beta1/AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.work:work-multiprocess:2.7.0] /Users/giordano/.gradle/caches/transforms-3/e1a97f6c9951ef48d63c28ab9b84ae25/transformed/jetified-work-multiprocess-2.7.0/AndroidManifest.xml:17:1-30:12
-MERGED from [com.google.mlkit:barcode-scanning:17.2.0] /Users/giordano/.gradle/caches/transforms-3/e4d864e744d2462e9fa0aa0928ec44f8/transformed/jetified-barcode-scanning-17.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.mlkit:object-detection:17.0.0] /Users/giordano/.gradle/caches/transforms-3/3aeada17da5e8f8d989ca5a69f39f5bb/transformed/jetified-object-detection-17.0.0/AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/giordano/.gradle/caches/transforms-3/64fbe99e83cfeaef8ef84185656559f3/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.mlkit:object-detection-custom:17.0.1] /Users/giordano/.gradle/caches/transforms-3/066b1243706a9905b0a81d89aa481975/transformed/jetified-object-detection-custom-17.0.1/AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.mlkit:face-detection:16.1.5] /Users/giordano/.gradle/caches/transforms-3/7644a68c632287d0dd6bd9a958e15515/transformed/jetified-face-detection-16.1.5/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.mlkit:text-recognition:16.0.0] /Users/giordano/.gradle/caches/transforms-3/74500615fc87faf773cad251486fce01/transformed/jetified-text-recognition-16.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:text-recognition-chinese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/55cda43f7be4d54987301d1851f0b58a/transformed/jetified-text-recognition-chinese-16.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:text-recognition-devanagari:16.0.0] /Users/giordano/.gradle/caches/transforms-3/708ba3f6f85984a4879e6c3c010f118e/transformed/jetified-text-recognition-devanagari-16.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:text-recognition-japanese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/6934bc6933e5bb8aaec8258b8bde2f93/transformed/jetified-text-recognition-japanese-16.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:text-recognition-korean:16.0.0] /Users/giordano/.gradle/caches/transforms-3/f7d99e87afaa71844030c5b455d3bfa7/transformed/jetified-text-recognition-korean-16.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:image-labeling:17.0.7] /Users/giordano/.gradle/caches/transforms-3/25703570df0fbb6bfbdd494a8813a3da/transformed/jetified-image-labeling-17.0.7/AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.2] /Users/giordano/.gradle/caches/transforms-3/3fe85dff0dc8c828cd4a7fa7fe4a914d/transformed/jetified-image-labeling-custom-17.0.2/AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] /Users/giordano/.gradle/caches/transforms-3/cf0beda7baee7449e74c4a3ed6a7743a/transformed/jetified-segmentation-selfie-16.0.0-beta4/AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.mlkit:camera:16.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/96ad8e3d2f87d1cbf99e76d60413c95b/transformed/jetified-camera-16.0.0-beta3/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/ffd30c3aa63a8385c9e6f0be8c79f6f6/transformed/jetified-face-mesh-detection-16.0.0-beta1/AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/bdad31afb523ecde730228371b9c08db/transformed/jetified-play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /Users/giordano/.gradle/caches/transforms-3/45b235391893318e291a0a23f9ce1ff3/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /Users/giordano/.gradle/caches/transforms-3/d918be53004442e6df7f77fc033957dc/transformed/jetified-barcode-scanning-common-17.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:object-detection-common:18.0.0] /Users/giordano/.gradle/caches/transforms-3/04a799ca5e6e693d15ca1aca9c5e11d2/transformed/jetified-object-detection-common-18.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] /Users/giordano/.gradle/caches/transforms-3/dc5847422c7152f64f6bcec0215782f0/transformed/jetified-vision-internal-vkp-18.2.2/AndroidManifest.xml:2:1-20:12
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/giordano/.gradle/caches/transforms-3/3f272a994eb1b95878a2c8c7662576e3/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.mlkit:text-recognition-bundled-common:16.0.0] /Users/giordano/.gradle/caches/transforms-3/097a2c8fd8e9457f1bad740bb153dbac/transformed/jetified-text-recognition-bundled-common-16.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:19.0.0] /Users/giordano/.gradle/caches/transforms-3/31178b6120f0e5ecf03bad62a76ad4bb/transformed/jetified-play-services-mlkit-text-recognition-19.0.0/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/783f9ed43252c014e6d5645343c19250/transformed/jetified-play-services-mlkit-text-recognition-chinese-16.0.0/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.0.0] /Users/giordano/.gradle/caches/transforms-3/87cc6479f71fa76a70ab45fdef463565/transformed/jetified-play-services-mlkit-text-recognition-devanagari-16.0.0/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/b2e66534229e2c225124357e93e0ead0/transformed/jetified-play-services-mlkit-text-recognition-japanese-16.0.0/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-korean:16.0.0] /Users/giordano/.gradle/caches/transforms-3/faffe1967ffe1dbe75c18d56f68b8b87/transformed/jetified-play-services-mlkit-text-recognition-korean-16.0.0/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /Users/giordano/.gradle/caches/transforms-3/51cc9d72a73ccdaa2f3289dc9a32b52f/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.mlkit:image-labeling-default-common:17.0.0] /Users/giordano/.gradle/caches/transforms-3/8b16fbf3aeb24be02d3134c6348b9cba/transformed/jetified-image-labeling-default-common-17.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:image-labeling-custom-common:17.0.0] /Users/giordano/.gradle/caches/transforms-3/035092c32b3709d81146238912320d40/transformed/jetified-image-labeling-custom-common-17.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:image-labeling-common:18.1.0] /Users/giordano/.gradle/caches/transforms-3/ee220119b80bc3e79ee6b37dd7c70410/transformed/jetified-image-labeling-common-18.1.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.mlkit:object-detection-common:18.0.0] /Users/giordano/.gradle/caches/transforms-3/04a799ca5e6e693d15ca1aca9c5e11d2/transformed/jetified-object-detection-common-18.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.mlkit:mediapipe-internal:17.0.0-beta8] /Users/giordano/.gradle/caches/transforms-3/807ee0c5631b602e12f690e25bc036dd/transformed/jetified-mediapipe-internal-17.0.0-beta8/AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/giordano/.gradle/caches/transforms-3/6d78765404bd1a226037b5c53169bbc7/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.mlkit:common:18.10.0] /Users/giordano/.gradle/caches/transforms-3/9f7f32d8a3d7a3868432c2e1f842b0cf/transformed/jetified-common-18.10.0/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/giordano/.gradle/caches/transforms-3/fbcee25c2db3403d438230f5cbed0fdd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
-MERGED from [com.google.mlkit:vision-interfaces:16.3.0] /Users/giordano/.gradle/caches/transforms-3/7399297f00fb6ce13daaa992f1ccada6/transformed/jetified-vision-interfaces-16.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.mlkit:vision-interfaces:16.1.0] /Users/giordano/.gradle/caches/transforms-3/81e18fdedd322d5136b56c93bffb3120/transformed/jetified-vision-interfaces-16.1.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/giordano/.gradle/caches/transforms-3/bdcbbce301738296eea040bffc3c320e/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/giordano/.gradle/caches/transforms-3/9c1756a696ad536884e95739d7f66b72/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/giordano/.gradle/caches/transforms-3/64fbe99e83cfeaef8ef84185656559f3/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/giordano/.gradle/caches/transforms-3/754e4fbe305f79176856667e4ef4efeb/transformed/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.camera:camera-view:1.0.0-SNAPSHOT] /Users/giordano/.gradle/caches/transforms-3/688bc6e6039baadb9fbf6f10118af39b/transformed/jetified-camera-view-1.0.0-SNAPSHOT/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/giordano/.gradle/caches/transforms-3/235f5e31264d91b288db1142a49f95ed/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -120,66 +94,16 @@ MERGED from [com.google.mlkit:acceleration:16.0.0-beta1] /Users/giordano/.gradle
 MERGED from [com.google.mlkit:acceleration:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/0d876b951d3e59df1eae6dc18af89b11/transformed/jetified-acceleration-16.0.0-beta1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.work:work-multiprocess:2.7.0] /Users/giordano/.gradle/caches/transforms-3/e1a97f6c9951ef48d63c28ab9b84ae25/transformed/jetified-work-multiprocess-2.7.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.work:work-multiprocess:2.7.0] /Users/giordano/.gradle/caches/transforms-3/e1a97f6c9951ef48d63c28ab9b84ae25/transformed/jetified-work-multiprocess-2.7.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.mlkit:barcode-scanning:17.2.0] /Users/giordano/.gradle/caches/transforms-3/e4d864e744d2462e9fa0aa0928ec44f8/transformed/jetified-barcode-scanning-17.2.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:barcode-scanning:17.2.0] /Users/giordano/.gradle/caches/transforms-3/e4d864e744d2462e9fa0aa0928ec44f8/transformed/jetified-barcode-scanning-17.2.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:object-detection:17.0.0] /Users/giordano/.gradle/caches/transforms-3/3aeada17da5e8f8d989ca5a69f39f5bb/transformed/jetified-object-detection-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:object-detection:17.0.0] /Users/giordano/.gradle/caches/transforms-3/3aeada17da5e8f8d989ca5a69f39f5bb/transformed/jetified-object-detection-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/giordano/.gradle/caches/transforms-3/64fbe99e83cfeaef8ef84185656559f3/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/giordano/.gradle/caches/transforms-3/64fbe99e83cfeaef8ef84185656559f3/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.mlkit:object-detection-custom:17.0.1] /Users/giordano/.gradle/caches/transforms-3/066b1243706a9905b0a81d89aa481975/transformed/jetified-object-detection-custom-17.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:object-detection-custom:17.0.1] /Users/giordano/.gradle/caches/transforms-3/066b1243706a9905b0a81d89aa481975/transformed/jetified-object-detection-custom-17.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:face-detection:16.1.5] /Users/giordano/.gradle/caches/transforms-3/7644a68c632287d0dd6bd9a958e15515/transformed/jetified-face-detection-16.1.5/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:face-detection:16.1.5] /Users/giordano/.gradle/caches/transforms-3/7644a68c632287d0dd6bd9a958e15515/transformed/jetified-face-detection-16.1.5/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:text-recognition:16.0.0] /Users/giordano/.gradle/caches/transforms-3/74500615fc87faf773cad251486fce01/transformed/jetified-text-recognition-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition:16.0.0] /Users/giordano/.gradle/caches/transforms-3/74500615fc87faf773cad251486fce01/transformed/jetified-text-recognition-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-chinese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/55cda43f7be4d54987301d1851f0b58a/transformed/jetified-text-recognition-chinese-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-chinese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/55cda43f7be4d54987301d1851f0b58a/transformed/jetified-text-recognition-chinese-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-devanagari:16.0.0] /Users/giordano/.gradle/caches/transforms-3/708ba3f6f85984a4879e6c3c010f118e/transformed/jetified-text-recognition-devanagari-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-devanagari:16.0.0] /Users/giordano/.gradle/caches/transforms-3/708ba3f6f85984a4879e6c3c010f118e/transformed/jetified-text-recognition-devanagari-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-japanese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/6934bc6933e5bb8aaec8258b8bde2f93/transformed/jetified-text-recognition-japanese-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-japanese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/6934bc6933e5bb8aaec8258b8bde2f93/transformed/jetified-text-recognition-japanese-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-korean:16.0.0] /Users/giordano/.gradle/caches/transforms-3/f7d99e87afaa71844030c5b455d3bfa7/transformed/jetified-text-recognition-korean-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-korean:16.0.0] /Users/giordano/.gradle/caches/transforms-3/f7d99e87afaa71844030c5b455d3bfa7/transformed/jetified-text-recognition-korean-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling:17.0.7] /Users/giordano/.gradle/caches/transforms-3/25703570df0fbb6bfbdd494a8813a3da/transformed/jetified-image-labeling-17.0.7/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling:17.0.7] /Users/giordano/.gradle/caches/transforms-3/25703570df0fbb6bfbdd494a8813a3da/transformed/jetified-image-labeling-17.0.7/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.2] /Users/giordano/.gradle/caches/transforms-3/3fe85dff0dc8c828cd4a7fa7fe4a914d/transformed/jetified-image-labeling-custom-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.2] /Users/giordano/.gradle/caches/transforms-3/3fe85dff0dc8c828cd4a7fa7fe4a914d/transformed/jetified-image-labeling-custom-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] /Users/giordano/.gradle/caches/transforms-3/cf0beda7baee7449e74c4a3ed6a7743a/transformed/jetified-segmentation-selfie-16.0.0-beta4/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] /Users/giordano/.gradle/caches/transforms-3/cf0beda7baee7449e74c4a3ed6a7743a/transformed/jetified-segmentation-selfie-16.0.0-beta4/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:camera:16.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/96ad8e3d2f87d1cbf99e76d60413c95b/transformed/jetified-camera-16.0.0-beta3/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:camera:16.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/96ad8e3d2f87d1cbf99e76d60413c95b/transformed/jetified-camera-16.0.0-beta3/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/ffd30c3aa63a8385c9e6f0be8c79f6f6/transformed/jetified-face-mesh-detection-16.0.0-beta1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/ffd30c3aa63a8385c9e6f0be8c79f6f6/transformed/jetified-face-mesh-detection-16.0.0-beta1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/bdad31afb523ecde730228371b9c08db/transformed/jetified-play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/bdad31afb523ecde730228371b9c08db/transformed/jetified-play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /Users/giordano/.gradle/caches/transforms-3/45b235391893318e291a0a23f9ce1ff3/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /Users/giordano/.gradle/caches/transforms-3/45b235391893318e291a0a23f9ce1ff3/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /Users/giordano/.gradle/caches/transforms-3/d918be53004442e6df7f77fc033957dc/transformed/jetified-barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /Users/giordano/.gradle/caches/transforms-3/d918be53004442e6df7f77fc033957dc/transformed/jetified-barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:object-detection-common:18.0.0] /Users/giordano/.gradle/caches/transforms-3/04a799ca5e6e693d15ca1aca9c5e11d2/transformed/jetified-object-detection-common-18.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:object-detection-common:18.0.0] /Users/giordano/.gradle/caches/transforms-3/04a799ca5e6e693d15ca1aca9c5e11d2/transformed/jetified-object-detection-common-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] /Users/giordano/.gradle/caches/transforms-3/dc5847422c7152f64f6bcec0215782f0/transformed/jetified-vision-internal-vkp-18.2.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] /Users/giordano/.gradle/caches/transforms-3/dc5847422c7152f64f6bcec0215782f0/transformed/jetified-vision-internal-vkp-18.2.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/giordano/.gradle/caches/transforms-3/3f272a994eb1b95878a2c8c7662576e3/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/giordano/.gradle/caches/transforms-3/3f272a994eb1b95878a2c8c7662576e3/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:text-recognition-bundled-common:16.0.0] /Users/giordano/.gradle/caches/transforms-3/097a2c8fd8e9457f1bad740bb153dbac/transformed/jetified-text-recognition-bundled-common-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-bundled-common:16.0.0] /Users/giordano/.gradle/caches/transforms-3/097a2c8fd8e9457f1bad740bb153dbac/transformed/jetified-text-recognition-bundled-common-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:19.0.0] /Users/giordano/.gradle/caches/transforms-3/31178b6120f0e5ecf03bad62a76ad4bb/transformed/jetified-play-services-mlkit-text-recognition-19.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:19.0.0] /Users/giordano/.gradle/caches/transforms-3/31178b6120f0e5ecf03bad62a76ad4bb/transformed/jetified-play-services-mlkit-text-recognition-19.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/783f9ed43252c014e6d5645343c19250/transformed/jetified-play-services-mlkit-text-recognition-chinese-16.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/783f9ed43252c014e6d5645343c19250/transformed/jetified-play-services-mlkit-text-recognition-chinese-16.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.0.0] /Users/giordano/.gradle/caches/transforms-3/87cc6479f71fa76a70ab45fdef463565/transformed/jetified-play-services-mlkit-text-recognition-devanagari-16.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.0.0] /Users/giordano/.gradle/caches/transforms-3/87cc6479f71fa76a70ab45fdef463565/transformed/jetified-play-services-mlkit-text-recognition-devanagari-16.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/b2e66534229e2c225124357e93e0ead0/transformed/jetified-play-services-mlkit-text-recognition-japanese-16.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.0.0] /Users/giordano/.gradle/caches/transforms-3/b2e66534229e2c225124357e93e0ead0/transformed/jetified-play-services-mlkit-text-recognition-japanese-16.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-korean:16.0.0] /Users/giordano/.gradle/caches/transforms-3/faffe1967ffe1dbe75c18d56f68b8b87/transformed/jetified-play-services-mlkit-text-recognition-korean-16.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-korean:16.0.0] /Users/giordano/.gradle/caches/transforms-3/faffe1967ffe1dbe75c18d56f68b8b87/transformed/jetified-play-services-mlkit-text-recognition-korean-16.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /Users/giordano/.gradle/caches/transforms-3/51cc9d72a73ccdaa2f3289dc9a32b52f/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /Users/giordano/.gradle/caches/transforms-3/51cc9d72a73ccdaa2f3289dc9a32b52f/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:image-labeling-default-common:17.0.0] /Users/giordano/.gradle/caches/transforms-3/8b16fbf3aeb24be02d3134c6348b9cba/transformed/jetified-image-labeling-default-common-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-default-common:17.0.0] /Users/giordano/.gradle/caches/transforms-3/8b16fbf3aeb24be02d3134c6348b9cba/transformed/jetified-image-labeling-default-common-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-custom-common:17.0.0] /Users/giordano/.gradle/caches/transforms-3/035092c32b3709d81146238912320d40/transformed/jetified-image-labeling-custom-common-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-custom-common:17.0.0] /Users/giordano/.gradle/caches/transforms-3/035092c32b3709d81146238912320d40/transformed/jetified-image-labeling-custom-common-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-common:18.1.0] /Users/giordano/.gradle/caches/transforms-3/ee220119b80bc3e79ee6b37dd7c70410/transformed/jetified-image-labeling-common-18.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-common:18.1.0] /Users/giordano/.gradle/caches/transforms-3/ee220119b80bc3e79ee6b37dd7c70410/transformed/jetified-image-labeling-common-18.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:object-detection-common:18.0.0] /Users/giordano/.gradle/caches/transforms-3/04a799ca5e6e693d15ca1aca9c5e11d2/transformed/jetified-object-detection-common-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:object-detection-common:18.0.0] /Users/giordano/.gradle/caches/transforms-3/04a799ca5e6e693d15ca1aca9c5e11d2/transformed/jetified-object-detection-common-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:mediapipe-internal:17.0.0-beta8] /Users/giordano/.gradle/caches/transforms-3/807ee0c5631b602e12f690e25bc036dd/transformed/jetified-mediapipe-internal-17.0.0-beta8/AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:mediapipe-internal:17.0.0-beta8] /Users/giordano/.gradle/caches/transforms-3/807ee0c5631b602e12f690e25bc036dd/transformed/jetified-mediapipe-internal-17.0.0-beta8/AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/giordano/.gradle/caches/transforms-3/6d78765404bd1a226037b5c53169bbc7/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:6:5-44
@@ -188,14 +112,12 @@ MERGED from [com.google.mlkit:common:18.10.0] /Users/giordano/.gradle/caches/tra
 MERGED from [com.google.mlkit:common:18.10.0] /Users/giordano/.gradle/caches/transforms-3/9f7f32d8a3d7a3868432c2e1f842b0cf/transformed/jetified-common-18.10.0/AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/giordano/.gradle/caches/transforms-3/fbcee25c2db3403d438230f5cbed0fdd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/giordano/.gradle/caches/transforms-3/fbcee25c2db3403d438230f5cbed0fdd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.mlkit:vision-interfaces:16.3.0] /Users/giordano/.gradle/caches/transforms-3/7399297f00fb6ce13daaa992f1ccada6/transformed/jetified-vision-interfaces-16.3.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:vision-interfaces:16.3.0] /Users/giordano/.gradle/caches/transforms-3/7399297f00fb6ce13daaa992f1ccada6/transformed/jetified-vision-interfaces-16.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-interfaces:16.1.0] /Users/giordano/.gradle/caches/transforms-3/81e18fdedd322d5136b56c93bffb3120/transformed/jetified-vision-interfaces-16.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-interfaces:16.1.0] /Users/giordano/.gradle/caches/transforms-3/81e18fdedd322d5136b56c93bffb3120/transformed/jetified-vision-interfaces-16.1.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/giordano/.gradle/caches/transforms-3/bdcbbce301738296eea040bffc3c320e/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/giordano/.gradle/caches/transforms-3/bdcbbce301738296eea040bffc3c320e/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/giordano/.gradle/caches/transforms-3/9c1756a696ad536884e95739d7f66b72/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/giordano/.gradle/caches/transforms-3/9c1756a696ad536884e95739d7f66b72/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/giordano/.gradle/caches/transforms-3/64fbe99e83cfeaef8ef84185656559f3/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/giordano/.gradle/caches/transforms-3/64fbe99e83cfeaef8ef84185656559f3/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/giordano/.gradle/caches/transforms-3/754e4fbe305f79176856667e4ef4efeb/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/giordano/.gradle/caches/transforms-3/754e4fbe305f79176856667e4ef4efeb/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.camera:camera-view:1.0.0-SNAPSHOT] /Users/giordano/.gradle/caches/transforms-3/688bc6e6039baadb9fbf6f10118af39b/transformed/jetified-camera-view-1.0.0-SNAPSHOT/AndroidManifest.xml:20:5-22:41
@@ -325,8 +247,8 @@ ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/Android
 	android:name
 		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:22:22-62
 application
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:24:5-62:19
-INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:24:5-62:19
+ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:24:5-56:19
+INJECTED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:24:5-56:19
 MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/1d5b75270104870b3fc64375e070f2f5/transformed/jetified-pose-detection-18.0.0-beta3/AndroidManifest.xml:7:5-20
 MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/1d5b75270104870b3fc64375e070f2f5/transformed/jetified-pose-detection-18.0.0-beta3/AndroidManifest.xml:7:5-20
 MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/f22ef8517d4e91baafb34f3e7cd9ea55/transformed/jetified-pose-detection-accurate-18.0.0-beta3/AndroidManifest.xml:7:5-20
@@ -339,26 +261,12 @@ MERGED from [androidx.work:work-multiprocess:2.7.0] /Users/giordano/.gradle/cach
 MERGED from [androidx.work:work-multiprocess:2.7.0] /Users/giordano/.gradle/caches/transforms-3/e1a97f6c9951ef48d63c28ab9b84ae25/transformed/jetified-work-multiprocess-2.7.0/AndroidManifest.xml:24:5-28:19
 MERGED from [com.google.mlkit:object-detection:17.0.0] /Users/giordano/.gradle/caches/transforms-3/3aeada17da5e8f8d989ca5a69f39f5bb/transformed/jetified-object-detection-17.0.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.mlkit:object-detection:17.0.0] /Users/giordano/.gradle/caches/transforms-3/3aeada17da5e8f8d989ca5a69f39f5bb/transformed/jetified-object-detection-17.0.0/AndroidManifest.xml:10:5-18:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/giordano/.gradle/caches/transforms-3/64fbe99e83cfeaef8ef84185656559f3/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/giordano/.gradle/caches/transforms-3/64fbe99e83cfeaef8ef84185656559f3/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.mlkit:object-detection-custom:17.0.1] /Users/giordano/.gradle/caches/transforms-3/066b1243706a9905b0a81d89aa481975/transformed/jetified-object-detection-custom-17.0.1/AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.mlkit:object-detection-custom:17.0.1] /Users/giordano/.gradle/caches/transforms-3/066b1243706a9905b0a81d89aa481975/transformed/jetified-object-detection-custom-17.0.1/AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:image-labeling:17.0.7] /Users/giordano/.gradle/caches/transforms-3/25703570df0fbb6bfbdd494a8813a3da/transformed/jetified-image-labeling-17.0.7/AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:image-labeling:17.0.7] /Users/giordano/.gradle/caches/transforms-3/25703570df0fbb6bfbdd494a8813a3da/transformed/jetified-image-labeling-17.0.7/AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.2] /Users/giordano/.gradle/caches/transforms-3/3fe85dff0dc8c828cd4a7fa7fe4a914d/transformed/jetified-image-labeling-custom-17.0.2/AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.2] /Users/giordano/.gradle/caches/transforms-3/3fe85dff0dc8c828cd4a7fa7fe4a914d/transformed/jetified-image-labeling-custom-17.0.2/AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] /Users/giordano/.gradle/caches/transforms-3/cf0beda7baee7449e74c4a3ed6a7743a/transformed/jetified-segmentation-selfie-16.0.0-beta4/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] /Users/giordano/.gradle/caches/transforms-3/cf0beda7baee7449e74c4a3ed6a7743a/transformed/jetified-segmentation-selfie-16.0.0-beta4/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/ffd30c3aa63a8385c9e6f0be8c79f6f6/transformed/jetified-face-mesh-detection-16.0.0-beta1/AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/ffd30c3aa63a8385c9e6f0be8c79f6f6/transformed/jetified-face-mesh-detection-16.0.0-beta1/AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/bdad31afb523ecde730228371b9c08db/transformed/jetified-play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/bdad31afb523ecde730228371b9c08db/transformed/jetified-play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /Users/giordano/.gradle/caches/transforms-3/45b235391893318e291a0a23f9ce1ff3/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /Users/giordano/.gradle/caches/transforms-3/45b235391893318e291a0a23f9ce1ff3/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] /Users/giordano/.gradle/caches/transforms-3/dc5847422c7152f64f6bcec0215782f0/transformed/jetified-vision-internal-vkp-18.2.2/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] /Users/giordano/.gradle/caches/transforms-3/dc5847422c7152f64f6bcec0215782f0/transformed/jetified-vision-internal-vkp-18.2.2/AndroidManifest.xml:10:5-18:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/giordano/.gradle/caches/transforms-3/3f272a994eb1b95878a2c8c7662576e3/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/giordano/.gradle/caches/transforms-3/3f272a994eb1b95878a2c8c7662576e3/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /Users/giordano/.gradle/caches/transforms-3/51cc9d72a73ccdaa2f3289dc9a32b52f/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /Users/giordano/.gradle/caches/transforms-3/51cc9d72a73ccdaa2f3289dc9a32b52f/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/giordano/.gradle/caches/transforms-3/6d78765404bd1a226037b5c53169bbc7/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/giordano/.gradle/caches/transforms-3/6d78765404bd1a226037b5c53169bbc7/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.mlkit:common:18.10.0] /Users/giordano/.gradle/caches/transforms-3/9f7f32d8a3d7a3868432c2e1f842b0cf/transformed/jetified-common-18.10.0/AndroidManifest.xml:8:5-24:19
@@ -369,8 +277,6 @@ MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/giordano/
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/giordano/.gradle/caches/transforms-3/bdcbbce301738296eea040bffc3c320e/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/giordano/.gradle/caches/transforms-3/9c1756a696ad536884e95739d7f66b72/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/giordano/.gradle/caches/transforms-3/9c1756a696ad536884e95739d7f66b72/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/giordano/.gradle/caches/transforms-3/64fbe99e83cfeaef8ef84185656559f3/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/giordano/.gradle/caches/transforms-3/64fbe99e83cfeaef8ef84185656559f3/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/giordano/.gradle/caches/transforms-3/754e4fbe305f79176856667e4ef4efeb/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/giordano/.gradle/caches/transforms-3/754e4fbe305f79176856667e4ef4efeb/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.work:work-runtime:2.7.0] /Users/giordano/.gradle/caches/transforms-3/1e2201a8603c733c058ea26a138b6827/transformed/work-runtime-2.7.0/AndroidManifest.xml:30:5-143:19
@@ -447,22 +353,14 @@ ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/Android
 		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:53:13-44
 	android:name
 		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:51:13-71
-activity#com.google.mlkit.vision.posedetection.preference.SettingsActivity
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:56:9-60:20
-	android:exported
-		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:58:13-37
-	android:theme
-		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:59:13-44
-	android:name
-		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:57:13-93
 queries
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:63:5-67:15
+ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:57:5-61:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:64:9-66:18
+ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:58:9-60:18
 action#android.media.action.IMAGE_CAPTURE
-ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:65:13-73
+ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:59:13-73
 	android:name
-		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:65:21-70
+		ADDED from /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/AndroidManifest.xml:59:21-70
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] /Users/giordano/.gradle/caches/transforms-3/1bfc08d3eaa7b444f41b061f81a407b7/transformed/jetified-pose-detection-common-18.0.0-beta3/AndroidManifest.xml:7:5-79
 MERGED from [com.google.mlkit:object-detection:17.0.0] /Users/giordano/.gradle/caches/transforms-3/3aeada17da5e8f8d989ca5a69f39f5bb/transformed/jetified-object-detection-17.0.0/AndroidManifest.xml:7:5-79
@@ -489,24 +387,8 @@ MERGED from [com.google.mlkit:object-detection:17.0.0] /Users/giordano/.gradle/c
 MERGED from [com.google.mlkit:object-detection:17.0.0] /Users/giordano/.gradle/caches/transforms-3/3aeada17da5e8f8d989ca5a69f39f5bb/transformed/jetified-object-detection-17.0.0/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.mlkit:object-detection-custom:17.0.1] /Users/giordano/.gradle/caches/transforms-3/066b1243706a9905b0a81d89aa481975/transformed/jetified-object-detection-custom-17.0.1/AndroidManifest.xml:8:9-14:19
 MERGED from [com.google.mlkit:object-detection-custom:17.0.1] /Users/giordano/.gradle/caches/transforms-3/066b1243706a9905b0a81d89aa481975/transformed/jetified-object-detection-custom-17.0.1/AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:image-labeling:17.0.7] /Users/giordano/.gradle/caches/transforms-3/25703570df0fbb6bfbdd494a8813a3da/transformed/jetified-image-labeling-17.0.7/AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:image-labeling:17.0.7] /Users/giordano/.gradle/caches/transforms-3/25703570df0fbb6bfbdd494a8813a3da/transformed/jetified-image-labeling-17.0.7/AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.2] /Users/giordano/.gradle/caches/transforms-3/3fe85dff0dc8c828cd4a7fa7fe4a914d/transformed/jetified-image-labeling-custom-17.0.2/AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.2] /Users/giordano/.gradle/caches/transforms-3/3fe85dff0dc8c828cd4a7fa7fe4a914d/transformed/jetified-image-labeling-custom-17.0.2/AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] /Users/giordano/.gradle/caches/transforms-3/cf0beda7baee7449e74c4a3ed6a7743a/transformed/jetified-segmentation-selfie-16.0.0-beta4/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] /Users/giordano/.gradle/caches/transforms-3/cf0beda7baee7449e74c4a3ed6a7743a/transformed/jetified-segmentation-selfie-16.0.0-beta4/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/ffd30c3aa63a8385c9e6f0be8c79f6f6/transformed/jetified-face-mesh-detection-16.0.0-beta1/AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/ffd30c3aa63a8385c9e6f0be8c79f6f6/transformed/jetified-face-mesh-detection-16.0.0-beta1/AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/bdad31afb523ecde730228371b9c08db/transformed/jetified-play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/bdad31afb523ecde730228371b9c08db/transformed/jetified-play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /Users/giordano/.gradle/caches/transforms-3/45b235391893318e291a0a23f9ce1ff3/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /Users/giordano/.gradle/caches/transforms-3/45b235391893318e291a0a23f9ce1ff3/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] /Users/giordano/.gradle/caches/transforms-3/dc5847422c7152f64f6bcec0215782f0/transformed/jetified-vision-internal-vkp-18.2.2/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] /Users/giordano/.gradle/caches/transforms-3/dc5847422c7152f64f6bcec0215782f0/transformed/jetified-vision-internal-vkp-18.2.2/AndroidManifest.xml:11:9-17:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/giordano/.gradle/caches/transforms-3/3f272a994eb1b95878a2c8c7662576e3/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/giordano/.gradle/caches/transforms-3/3f272a994eb1b95878a2c8c7662576e3/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /Users/giordano/.gradle/caches/transforms-3/51cc9d72a73ccdaa2f3289dc9a32b52f/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /Users/giordano/.gradle/caches/transforms-3/51cc9d72a73ccdaa2f3289dc9a32b52f/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/giordano/.gradle/caches/transforms-3/6d78765404bd1a226037b5c53169bbc7/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/giordano/.gradle/caches/transforms-3/6d78765404bd1a226037b5c53169bbc7/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.mlkit:common:18.10.0] /Users/giordano/.gradle/caches/transforms-3/9f7f32d8a3d7a3868432c2e1f842b0cf/transformed/jetified-common-18.10.0/AndroidManifest.xml:15:9-23:19
@@ -551,60 +433,12 @@ ADDED from [com.google.mlkit:object-detection-custom:17.0.1] /Users/giordano/.gr
 		ADDED from [com.google.mlkit:object-detection-custom:17.0.1] /Users/giordano/.gradle/caches/transforms-3/066b1243706a9905b0a81d89aa481975/transformed/jetified-object-detection-custom-17.0.1/AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [com.google.mlkit:object-detection-custom:17.0.1] /Users/giordano/.gradle/caches/transforms-3/066b1243706a9905b0a81d89aa481975/transformed/jetified-object-detection-custom-17.0.1/AndroidManifest.xml:12:17-133
-meta-data#com.google.firebase.components:com.google.mlkit.vision.label.defaults.internal.BundledLabelRegistrar
-ADDED from [com.google.mlkit:image-labeling:17.0.7] /Users/giordano/.gradle/caches/transforms-3/25703570df0fbb6bfbdd494a8813a3da/transformed/jetified-image-labeling-17.0.7/AndroidManifest.xml:11:13-13:85
-	android:value
-		ADDED from [com.google.mlkit:image-labeling:17.0.7] /Users/giordano/.gradle/caches/transforms-3/25703570df0fbb6bfbdd494a8813a3da/transformed/jetified-image-labeling-17.0.7/AndroidManifest.xml:13:17-82
-	android:name
-		ADDED from [com.google.mlkit:image-labeling:17.0.7] /Users/giordano/.gradle/caches/transforms-3/25703570df0fbb6bfbdd494a8813a3da/transformed/jetified-image-labeling-17.0.7/AndroidManifest.xml:12:17-132
-meta-data#com.google.firebase.components:com.google.mlkit.vision.label.custom.internal.CustomLabelRegistrar
-ADDED from [com.google.mlkit:image-labeling-custom:17.0.2] /Users/giordano/.gradle/caches/transforms-3/3fe85dff0dc8c828cd4a7fa7fe4a914d/transformed/jetified-image-labeling-custom-17.0.2/AndroidManifest.xml:11:13-13:85
-	android:value
-		ADDED from [com.google.mlkit:image-labeling-custom:17.0.2] /Users/giordano/.gradle/caches/transforms-3/3fe85dff0dc8c828cd4a7fa7fe4a914d/transformed/jetified-image-labeling-custom-17.0.2/AndroidManifest.xml:13:17-82
-	android:name
-		ADDED from [com.google.mlkit:image-labeling-custom:17.0.2] /Users/giordano/.gradle/caches/transforms-3/3fe85dff0dc8c828cd4a7fa7fe4a914d/transformed/jetified-image-labeling-custom-17.0.2/AndroidManifest.xml:12:17-129
-meta-data#com.google.firebase.components:com.google.mlkit.vision.segmentation.internal.SegmentationRegistrar
-ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] /Users/giordano/.gradle/caches/transforms-3/cf0beda7baee7449e74c4a3ed6a7743a/transformed/jetified-segmentation-selfie-16.0.0-beta4/AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] /Users/giordano/.gradle/caches/transforms-3/cf0beda7baee7449e74c4a3ed6a7743a/transformed/jetified-segmentation-selfie-16.0.0-beta4/AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] /Users/giordano/.gradle/caches/transforms-3/cf0beda7baee7449e74c4a3ed6a7743a/transformed/jetified-segmentation-selfie-16.0.0-beta4/AndroidManifest.xml:13:17-130
-meta-data#com.google.firebase.components:com.google.mlkit.vision.facemesh.internal.FaceMeshRegistrar
-ADDED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/ffd30c3aa63a8385c9e6f0be8c79f6f6/transformed/jetified-face-mesh-detection-16.0.0-beta1/AndroidManifest.xml:11:13-13:85
-	android:value
-		ADDED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/ffd30c3aa63a8385c9e6f0be8c79f6f6/transformed/jetified-face-mesh-detection-16.0.0-beta1/AndroidManifest.xml:13:17-82
-	android:name
-		ADDED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/ffd30c3aa63a8385c9e6f0be8c79f6f6/transformed/jetified-face-mesh-detection-16.0.0-beta1/AndroidManifest.xml:12:17-122
-meta-data#com.google.firebase.components:com.google.mlkit.vision.segmentation.subject.internal.SubjectSegmentationRegistrar
-ADDED from [com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/bdad31afb523ecde730228371b9c08db/transformed/jetified-play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:11:13-13:85
-	android:value
-		ADDED from [com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/bdad31afb523ecde730228371b9c08db/transformed/jetified-play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:13:17-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /Users/giordano/.gradle/caches/transforms-3/bdad31afb523ecde730228371b9c08db/transformed/jetified-play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:12:17-145
-meta-data#com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar
-ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /Users/giordano/.gradle/caches/transforms-3/45b235391893318e291a0a23f9ce1ff3/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /Users/giordano/.gradle/caches/transforms-3/45b235391893318e291a0a23f9ce1ff3/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /Users/giordano/.gradle/caches/transforms-3/45b235391893318e291a0a23f9ce1ff3/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:13:17-120
 meta-data#com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar
 ADDED from [com.google.mlkit:vision-internal-vkp:18.2.2] /Users/giordano/.gradle/caches/transforms-3/dc5847422c7152f64f6bcec0215782f0/transformed/jetified-vision-internal-vkp-18.2.2/AndroidManifest.xml:14:13-16:85
 	android:value
 		ADDED from [com.google.mlkit:vision-internal-vkp:18.2.2] /Users/giordano/.gradle/caches/transforms-3/dc5847422c7152f64f6bcec0215782f0/transformed/jetified-vision-internal-vkp-18.2.2/AndroidManifest.xml:16:17-82
 	android:name
 		ADDED from [com.google.mlkit:vision-internal-vkp:18.2.2] /Users/giordano/.gradle/caches/transforms-3/dc5847422c7152f64f6bcec0215782f0/transformed/jetified-vision-internal-vkp-18.2.2/AndroidManifest.xml:15:17-103
-meta-data#com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar
-ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/giordano/.gradle/caches/transforms-3/3f272a994eb1b95878a2c8c7662576e3/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/giordano/.gradle/caches/transforms-3/3f272a994eb1b95878a2c8c7662576e3/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/giordano/.gradle/caches/transforms-3/3f272a994eb1b95878a2c8c7662576e3/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:13:17-114
-meta-data#com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar
-ADDED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /Users/giordano/.gradle/caches/transforms-3/51cc9d72a73ccdaa2f3289dc9a32b52f/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /Users/giordano/.gradle/caches/transforms-3/51cc9d72a73ccdaa2f3289dc9a32b52f/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /Users/giordano/.gradle/caches/transforms-3/51cc9d72a73ccdaa2f3289dc9a32b52f/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:13:17-114
 meta-data#com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
 ADDED from [com.google.mlkit:vision-common:17.3.0] /Users/giordano/.gradle/caches/transforms-3/6d78765404bd1a226037b5c53169bbc7/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
 	android:value
