@@ -55,13 +55,11 @@ public final class ChooserActivity extends AppCompatActivity
   private static final int[] DESCRIPTION_IDS =
       VERSION.SDK_INT < VERSION_CODES.LOLLIPOP
           ? new int[] {
-            R.string.desc_camera_source_activity, R.string.desc_still_image_activity,
+            R.string.desc_camera_source_activity
           }
           : new int[] {
             R.string.desc_camera_source_activity,
-            R.string.desc_still_image_activity,
-            R.string.desc_camerax_live_preview_activity,
-            R.string.desc_cameraxsource_demo_activity,
+            R.string.desc_camerax_live_preview_activity
           };
 
   @Override

@@ -79,6 +79,11 @@
             android:exported="false"
             android:theme="@style/AppTheme" >
         </activity>
+        <activity
+            android:name="com.google.mlkit.vision.posedetection.preference.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" >
+        </activity>
 
         <!--
              Required for ML Kit Pose Detection GPU acceleration. Applications that target Android

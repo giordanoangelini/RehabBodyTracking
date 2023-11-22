@@ -682,13 +682,9 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <string name="custom_object_detection" translatable="false">Custom Object Detector</string>
     <string name="desc_camera_source_activity" translatable="false">Vision detectors demo with live camera preview</string>
     <string name="desc_camerax_live_preview_activity" translatable="false">Vision detectors demo with live preview using CameraX. Note that CameraX is only supported on API 21+</string>
-    <string name="desc_cameraxsource_demo_activity" translatable="false">Object detection with custom classifier using ML Kit CameraXSource API. Note that CameraX is only supported on API 21+</string>
-    <string name="desc_still_image_activity" translatable="false">Vision detectors demo with a still image</string>
     <string name="download_error" translatable="false">Download error</string>
-    <string name="kotlin_entry_title" translatable="false">Run the ML Kit quickstart written in Kotlin</string>
     <string name="low_storage_error" translatable="false">Face detector dependencies cannot be downloaded due to low device storage</string>
     <string name="menu_item_settings" translatable="false">Settings</string>
     <string name="no_camera_permission" translatable="false">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
@@ -794,7 +790,6 @@
     <string name="pref_title_show_text_confidence" translatable="false">Show confidence score</string>
     <string name="pref_toast_invalid_min_face_size" translatable="false">Minimum face size must be a float value and in the range [0.0, 1.0]</string>
     <string name="search_menu_title">Search</string>
-    <string name="select_image" translatable="false">Select image</string>
     <string name="start_over" translatable="false">Start over</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="toggle_turn_off" translatable="false">Back</string>

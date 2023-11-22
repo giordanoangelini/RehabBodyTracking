@@ -1294,13 +1294,9 @@ int string common_google_play_services_wear_update_text 0x7f0f002d
 int string common_open_on_phone 0x7f0f002e
 int string common_signin_button_text 0x7f0f002f
 int string common_signin_button_text_long 0x7f0f0030
-int string custom_object_detection 0x7f0f0031
 int string desc_camera_source_activity 0x7f0f0032
 int string desc_camerax_live_preview_activity 0x7f0f0033
-int string desc_cameraxsource_demo_activity 0x7f0f0034
-int string desc_still_image_activity 0x7f0f0035
 int string download_error 0x7f0f0036
-int string kotlin_entry_title 0x7f0f0037
 int string low_storage_error 0x7f0f0038
 int string menu_item_settings 0x7f0f0039
 int string no_camera_permission 0x7f0f003a
@@ -1406,7 +1402,6 @@ int string pref_title_show_language_tag 0x7f0f009d
 int string pref_title_show_text_confidence 0x7f0f009e
 int string pref_toast_invalid_min_face_size 0x7f0f009f
 int string search_menu_title 0x7f0f00a0
-int string select_image 0x7f0f00a1
 int string start_over 0x7f0f00a2
 int string status_bar_notification_info_overflow 0x7f0f00a3
 int string toggle_turn_off 0x7f0f00a4

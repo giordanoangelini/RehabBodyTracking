@@ -1295,13 +1295,9 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
-string custom_object_detection
 string desc_camera_source_activity
 string desc_camerax_live_preview_activity
-string desc_cameraxsource_demo_activity
-string desc_still_image_activity
 string download_error
-string kotlin_entry_title
 string low_storage_error
 string menu_item_settings
 string no_camera_permission
@@ -1407,7 +1403,6 @@ string pref_title_show_language_tag
 string pref_title_show_text_confidence
 string pref_toast_invalid_min_face_size
 string search_menu_title
-string select_image
 string start_over
 string status_bar_notification_info_overflow
 string toggle_turn_off
