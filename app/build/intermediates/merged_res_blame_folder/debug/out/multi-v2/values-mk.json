@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.mlkit.vision.app-mergeDebugResources-27:/values-mk/values-mk.xml",
+            "outputFile": "com.google.mlkit.vision.app-mergeDebugResources-24:/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "/Users/giordano/.gradle/caches/transforms-3/84ae49216def1d4f978d2c6eb6d9b10c/transformed/core-1.9.0/res/values-mk/values-mk.xml",

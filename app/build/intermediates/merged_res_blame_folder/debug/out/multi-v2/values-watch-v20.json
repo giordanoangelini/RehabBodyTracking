@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.mlkit.vision.app-mergeDebugResources-27:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.google.mlkit.vision.app-mergeDebugResources-24:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/Users/giordano/.gradle/caches/transforms-3/51c72032da3cd4b66f2c70b6a9a5c5da/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.mlkit.vision.app-mergeDebugResources-27:/values-hy/values-hy.xml",
+            "outputFile": "com.google.mlkit.vision.app-mergeDebugResources-24:/values-hy/values-hy.xml",
             "map": [
                 {
                     "source": "/Users/giordano/.gradle/caches/transforms-3/fbcee25c2db3403d438230f5cbed0fdd/transformed/jetified-play-services-base-18.1.0/res/values-hy/values.xml",

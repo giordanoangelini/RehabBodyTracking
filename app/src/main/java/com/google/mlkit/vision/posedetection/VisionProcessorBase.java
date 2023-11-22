@@ -23,16 +23,12 @@ import android.app.ActivityManager;
 import android.app.ActivityManager.MemoryInfo;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.os.Build.VERSION_CODES;
 import android.os.SystemClock;
 import android.util.Log;
 import android.widget.Toast;
 import androidx.annotation.GuardedBy;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
-import androidx.camera.core.ExperimentalGetImage;
-import androidx.camera.core.ImageProxy;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.TaskExecutors;
 import com.google.android.gms.tasks.Tasks;
@@ -197,55 +193,6 @@ public abstract class VisionProcessorBase<T> implements VisionImageProcessor {
             /* shouldShowFps= */ true,
             frameStartMs)
         .addOnSuccessListener(executor, results -> processLatestImage(graphicOverlay));
-  }
-
-  // -----------------Code for processing live preview frame from CameraX API-----------------------
-  @Override
-  @RequiresApi(VERSION_CODES.LOLLIPOP)
-  @ExperimentalGetImage
-  public void processImageProxy(ImageProxy image, GraphicOverlay graphicOverlay) {
-    long frameStartMs = SystemClock.elapsedRealtime();
-    if (isShutdown) {
-      image.close();
-      return;
-    }
-
-    Bitmap bitmap = null;
-    if (!PreferenceUtils.isCameraLiveViewportEnabled(graphicOverlay.getContext())) {
-      bitmap = BitmapUtils.getBitmap(image);
-    }
-
-    if (isMlImageEnabled(graphicOverlay.getContext())) {
-      MlImage mlImage =
-          new MediaMlImageBuilder(image.getImage())
-              .setRotation(image.getImageInfo().getRotationDegrees())
-              .build();
-
-      requestDetectInImage(
-              mlImage,
-              graphicOverlay,
-              /* originalCameraImage= */ bitmap,
-              /* shouldShowFps= */ true,
-              frameStartMs)
-          // When the image is from CameraX analysis use case, must call image.close() on received
-          // images when finished using them. Otherwise, new images may not be received or the
-          // camera may stall.
-          // Currently MlImage doesn't support ImageProxy directly, so we still need to call
-          // ImageProxy.close() here.
-          .addOnCompleteListener(results -> image.close());
-      return;
-    }
-
-    requestDetectInImage(
-            InputImage.fromMediaImage(image.getImage(), image.getImageInfo().getRotationDegrees()),
-            graphicOverlay,
-            /* originalCameraImage= */ bitmap,
-            /* shouldShowFps= */ true,
-            frameStartMs)
-        // When the image is from CameraX analysis use case, must call image.close() on received
-        // images when finished using them. Otherwise, new images may not be received or the camera
-        // may stall.
-        .addOnCompleteListener(results -> image.close());
   }
 
   // -----------------Common processing logic-------------------------------------------------------

@@ -297,14 +297,6 @@
         <enum name="invisible" value="4"/>
         <enum name="gone" value="8"/>
     </attr>
-    <attr format="enum" name="scaleType">
-        <enum name="fillStart" value="0"/>
-        <enum name="fillCenter" value="1"/>
-        <enum name="fillEnd" value="2"/>
-        <enum name="fitStart" value="3"/>
-        <enum name="fitCenter" value="4"/>
-        <enum name="fitEnd" value="5"/>
-    </attr>
     <attr format="float" name="sizePercent"/>
     <attr format="reference" name="targetId"/>
     <attr format="string" name="title"/>
@@ -660,7 +652,6 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="androidx_camera_default_config_provider" translatable="false"/>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name" translatable="false">MLKit-BodyTracking</string>
     <string name="application_entry_point" translatable="false">Start</string>
@@ -2955,26 +2946,6 @@
         
         <attr format="boolean" name="allowStacking"/>
     </declare-styleable>
-    <declare-styleable name="CameraView">
-        <attr name="scaleType"/>
-        <attr format="enum" name="lensFacing">
-            <enum name="none" value="0"/>
-            <enum name="front" value="1"/>
-            <enum name="back" value="2"/>
-        </attr>
-        <attr format="enum" name="captureMode">
-            <enum name="image" value="0"/>
-            <enum name="video" value="1"/>
-            <enum name="mixed" value="2"/>
-        </attr>
-        <attr format="enum" name="flash">
-            <enum name="auto" value="1"/>
-            <enum name="on" value="2"/>
-            <enum name="off" value="4"/>
-        </attr>
-
-        <attr format="boolean" name="pinchToZoomEnabled"/>
-    </declare-styleable>
     <declare-styleable name="Capability">
         
         <attr format="reference" name="queryPatterns"/>
@@ -3444,9 +3415,6 @@
     <declare-styleable name="PopupWindowBackgroundState">
         
         <attr format="boolean" name="state_above_anchor"/>
-    </declare-styleable>
-    <declare-styleable name="PreviewView">
-        <attr name="scaleType"/>
     </declare-styleable>
     <declare-styleable name="PropertySet"><attr name="android:visibility"/><attr name="visibilityMode"/><attr format="float" name="android:alpha"/><attr name="motionProgress"/><attr name="layout_constraintTag"/></declare-styleable>
     <declare-styleable name="RecycleListView">

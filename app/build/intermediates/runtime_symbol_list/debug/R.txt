@@ -123,7 +123,6 @@ int attr buttonStyle 0x7f04004e
 int attr buttonStyleSmall 0x7f04004f
 int attr buttonTint 0x7f040050
 int attr buttonTintMode 0x7f040051
-int attr captureMode 0x7f040052
 int attr chainUseRtl 0x7f040053
 int attr checkMarkCompat 0x7f040054
 int attr checkMarkTint 0x7f040055
@@ -216,7 +215,6 @@ int attr elevation 0x7f0400ab
 int attr emojiCompatEnabled 0x7f0400ac
 int attr expandActivityOverflowButtonDrawable 0x7f0400ad
 int attr firstBaselineToTopHeight 0x7f0400ae
-int attr flash 0x7f0400af
 int attr flow_firstHorizontalBias 0x7f0400b0
 int attr flow_firstHorizontalStyle 0x7f0400b1
 int attr flow_firstVerticalBias 0x7f0400b2
@@ -323,7 +321,6 @@ int attr layout_goneMarginRight 0x7f040116
 int attr layout_goneMarginStart 0x7f040117
 int attr layout_goneMarginTop 0x7f040118
 int attr layout_optimizationLevel 0x7f040119
-int attr lensFacing 0x7f04011a
 int attr limitBoundsTo 0x7f04011b
 int attr lineHeight 0x7f04011c
 int attr listChoiceBackgroundIndicator 0x7f04011d
@@ -396,7 +393,6 @@ int attr percentWidth 0x7f04015f
 int attr percentX 0x7f040160
 int attr percentY 0x7f040161
 int attr perpendicularPath_percent 0x7f040162
-int attr pinchToZoomEnabled 0x7f040163
 int attr pivotAnchor 0x7f040164
 int attr placeholder_emptyVisibility 0x7f040165
 int attr popupMenuStyle 0x7f040166
@@ -419,7 +415,6 @@ int attr region_widthMoreThan 0x7f040176
 int attr round 0x7f040177
 int attr roundPercent 0x7f040178
 int attr saturation 0x7f040179
-int attr scaleType 0x7f04017a
 int attr scopeUris 0x7f04017b
 int attr searchHintIcon 0x7f04017c
 int attr searchIcon 0x7f04017d
@@ -966,7 +961,6 @@ int id auto 0x7f090049
 int id autoComplete 0x7f09004a
 int id autoCompleteToEnd 0x7f09004b
 int id autoCompleteToStart 0x7f09004c
-int id back 0x7f09004d
 int id barrier 0x7f09004e
 int id baseline 0x7f09004f
 int id beginOnFirstDraw 0x7f090050
@@ -1015,16 +1009,9 @@ int id edit_query 0x7f09007a
 int id end 0x7f09007b
 int id expand_activities_button 0x7f09007c
 int id expanded_menu 0x7f09007d
-int id fillCenter 0x7f09007e
-int id fillEnd 0x7f09007f
-int id fillStart 0x7f090080
-int id fitCenter 0x7f090081
-int id fitEnd 0x7f090082
-int id fitStart 0x7f090083
 int id flip 0x7f090084
 int id forever 0x7f090085
 int id fragment_container_view_tag 0x7f090086
-int id front 0x7f090087
 int id gone 0x7f090088
 int id graph 0x7f090089
 int id graph_wrap 0x7f09008a
@@ -1059,7 +1046,6 @@ int id listMode 0x7f0900a6
 int id list_item 0x7f0900a7
 int id message 0x7f0900a8
 int id middle 0x7f0900a9
-int id mixed 0x7f0900aa
 int id motion_base 0x7f0900ab
 int id multiply 0x7f0900ac
 int id never 0x7f0900ad
@@ -1162,7 +1148,6 @@ int id unchecked 0x7f09010d
 int id uniform 0x7f09010e
 int id up 0x7f09010f
 int id useLogo 0x7f090110
-int id video 0x7f090111
 int id view_tree_lifecycle_owner 0x7f090112
 int id view_tree_on_back_pressed_dispatcher_owner 0x7f090113
 int id view_tree_saved_state_registry_owner 0x7f090114
@@ -1256,7 +1241,6 @@ int string abc_searchview_description_voice 0x7f0e0017
 int string abc_shareactionprovider_share_with 0x7f0e0018
 int string abc_shareactionprovider_share_with_application 0x7f0e0019
 int string abc_toolbar_collapse_description 0x7f0e001a
-int string androidx_camera_default_config_provider 0x7f0e001b
 int string androidx_startup 0x7f0e001c
 int string app_name 0x7f0e001d
 int string application_entry_point 0x7f0e001e
@@ -1982,12 +1966,6 @@ int styleable AppCompatTheme_windowMinWidthMinor 125
 int styleable AppCompatTheme_windowNoTitle 126
 int[] styleable ButtonBarLayout { 0x7f040028 }
 int styleable ButtonBarLayout_allowStacking 0
-int[] styleable CameraView { 0x7f040052, 0x7f0400af, 0x7f04011a, 0x7f040163, 0x7f04017a }
-int styleable CameraView_captureMode 0
-int styleable CameraView_flash 1
-int styleable CameraView_lensFacing 2
-int styleable CameraView_pinchToZoomEnabled 3
-int styleable CameraView_scaleType 4
 int[] styleable Capability { 0x7f04016e, 0x7f040182 }
 int styleable Capability_queryPatterns 0
 int styleable Capability_shortcutMatchRequired 1
@@ -2670,8 +2648,6 @@ int styleable PopupWindow_android_popupAnimationStyle 1
 int styleable PopupWindow_overlapAnchor 2
 int[] styleable PopupWindowBackgroundState { 0x7f040190 }
 int styleable PopupWindowBackgroundState_state_above_anchor 0
-int[] styleable PreviewView { 0x7f04017a }
-int styleable PreviewView_scaleType 0
 int[] styleable PropertySet { 0x010100dc, 0x0101031f, 0x7f040106, 0x7f040140, 0x7f0401d4 }
 int styleable PropertySet_android_visibility 0
 int styleable PropertySet_android_alpha 1
