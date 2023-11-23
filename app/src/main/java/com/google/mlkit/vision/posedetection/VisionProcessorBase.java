@@ -150,7 +150,7 @@ public abstract class VisionProcessorBase<T> implements VisionImageProcessor {
     // If live viewport is on (that is the underneath surface view takes care of the camera preview
     // drawing), skip the unnecessary bitmap creation that used for the manual preview drawing.
     Bitmap bitmap =
-        PreferenceUtils.isCameraLiveViewportEnabled(graphicOverlay.getContext())
+        PreferenceUtils.isCameraLiveViewportEnabled
             ? null
             : BitmapUtils.getBitmap(data, frameMetadata);
 

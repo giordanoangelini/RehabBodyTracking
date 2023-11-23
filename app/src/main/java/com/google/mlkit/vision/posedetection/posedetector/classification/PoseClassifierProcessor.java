@@ -1,5 +1,6 @@
 package com.google.mlkit.vision.posedetection.posedetector.classification;
 
+import com.google.mlkit.vision.posedetection.posedetector.PoseClass;
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
@@ -8,6 +9,8 @@ import android.util.Log;
 import androidx.annotation.WorkerThread;
 import com.google.common.base.Preconditions;
 import com.google.mlkit.vision.pose.Pose;
+import com.google.mlkit.vision.posedetection.utils.PreferenceUtils;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -25,11 +28,6 @@ public class PoseClassifierProcessor {
   // Specify classes for which we want rep counting.
   // These are the labels in the given {@code POSE_SAMPLES_FILE}. You can set your own class labels
   // for your pose samples.
-  private static final String PUSHUPS_CLASS = "pushups_down";
-  private static final String SQUATS_CLASS = "squats_down";
-  private static final String[] POSE_CLASSES = {
-    PUSHUPS_CLASS, SQUATS_CLASS
-  };
 
   private final boolean isStreamMode;
 
@@ -69,8 +67,9 @@ public class PoseClassifierProcessor {
     }
     poseClassifier = new PoseClassifier(poseSamples);
     if (isStreamMode) {
-      for (String className : POSE_CLASSES) {
-        repCounters.add(new RepetitionCounter(className));
+      for (PoseClass exercise : PreferenceUtils.EXERCISE_LIST) {
+        if(exercise == PreferenceUtils.SELECTED_EXERCISE)
+          repCounters.add(new RepetitionCounter(exercise.getClass_label()));
       }
     }
   }

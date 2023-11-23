@@ -16,15 +16,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.mlkit.vision.posedetection.posedetector.PoseClass;
+import com.google.mlkit.vision.posedetection.utils.PreferenceUtils;
+
 /** Demo app chooser which allows you pick from all available testing Activities. */
 public final class ChooserActivity extends AppCompatActivity
     implements AdapterView.OnItemClickListener {
   private static final String TAG = "ChooserActivity";
-
-  @SuppressWarnings("NewApi") // CameraX is only available on API 21+
-  private static final Class<?>[] CLASSES = new Class<?>[] {LivePreviewActivity.class};
-
-  private static final int[] DESCRIPTION_IDS = new int[] { R.string.desc_camera_source_activity };
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -47,8 +45,7 @@ public final class ChooserActivity extends AppCompatActivity
     // Set up ListView and Adapter
     ListView listView = findViewById(R.id.test_activity_list_view);
 
-    MyArrayAdapter adapter = new MyArrayAdapter(this, android.R.layout.simple_list_item_2, CLASSES);
-    adapter.setDescriptionIds(DESCRIPTION_IDS);
+    MyArrayAdapter adapter = new MyArrayAdapter(this, R.layout.list_layout, PreferenceUtils.EXERCISE_LIST);
 
     listView.setAdapter(adapter);
     listView.setOnItemClickListener(this);
@@ -56,19 +53,17 @@ public final class ChooserActivity extends AppCompatActivity
 
   @Override
   public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-    Class<?> clicked = CLASSES[position];
-    startActivity(new Intent(this, clicked));
+    PreferenceUtils.SELECTED_EXERCISE = PreferenceUtils.EXERCISE_LIST[position];
+    startActivity(new Intent(this, LivePreviewActivity.class));
   }
 
-  private static class MyArrayAdapter extends ArrayAdapter<Class<?>> {
+  private static class MyArrayAdapter extends ArrayAdapter<PoseClass> {
 
     private final Context context;
-    private final Class<?>[] classes;
-    private int[] descriptionIds;
+    private final PoseClass[] classes;
 
-    MyArrayAdapter(Context context, int resource, Class<?>[] objects) {
-      super(context, resource, objects);
-
+    MyArrayAdapter(Context context, int resource, PoseClass[] objects) {
+      super(context, resource,objects);
       this.context = context;
       classes = objects;
     }
@@ -79,19 +74,14 @@ public final class ChooserActivity extends AppCompatActivity
 
       if (convertView == null) {
         LayoutInflater inflater =
-            (LayoutInflater) context.getSystemService(LAYOUT_INFLATER_SERVICE);
-        view = inflater.inflate(android.R.layout.simple_list_item_2, null);
+                (LayoutInflater) context.getSystemService(LAYOUT_INFLATER_SERVICE);
+        view = inflater.inflate(R.layout.list_layout, null);
       }
 
-      ((TextView) view.findViewById(android.R.id.text1)).setText(classes[position].getSimpleName());
-      ((TextView) view.findViewById(android.R.id.text2)).setText(descriptionIds[position]);
+      ((TextView) view.findViewById(R.id.big_title)).setText(classes[position].getClass_label());
+      ((TextView) view.findViewById(R.id.small_title)).setText(classes[position].getDescription_id());
 
       return view;
     }
-
-    void setDescriptionIds(int[] descriptionIds) {
-      this.descriptionIds = descriptionIds;
-    }
   }
-  
 }

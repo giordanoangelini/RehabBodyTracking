@@ -4,10 +4,6 @@
         "source": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-main-28:/layout-land/activity_vision_live_preview.xml"
     },
     {
-        "merged": "com.google.mlkit.vision.app-merged_res-26:/layout_activity_vision_live_preview.xml.flat",
-        "source": "com.google.mlkit.vision.app-main-28:/layout/activity_vision_live_preview.xml"
-    },
-    {
         "merged": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-merged_res-26:/layout_activity_vision_live_preview.xml.flat",
         "source": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-main-28:/layout/activity_vision_live_preview.xml"
     },
@@ -28,12 +24,16 @@
         "source": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-main-28:/layout/activity_vision_entry_choice.xml"
     },
     {
-        "merged": "com.google.mlkit.vision.app-merged_res-26:/layout-land_activity_vision_live_preview.xml.flat",
-        "source": "com.google.mlkit.vision.app-main-28:/layout-land/activity_vision_live_preview.xml"
-    },
-    {
         "merged": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-merged_res-26:/drawable_list_item_background.xml.flat",
         "source": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-main-28:/drawable/list_item_background.xml"
+    },
+    {
+        "merged": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-merged_res-26:/layout_list_layout.xml.flat",
+        "source": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-main-28:/layout/list_layout.xml"
+    },
+    {
+        "merged": "com.google.mlkit.vision.app-merged_res-26:/layout_list_layout.xml.flat",
+        "source": "com.google.mlkit.vision.app-main-28:/layout/list_layout.xml"
     },
     {
         "merged": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-merged_res-26:/mipmap-mdpi_ic_launcher.png.flat",
