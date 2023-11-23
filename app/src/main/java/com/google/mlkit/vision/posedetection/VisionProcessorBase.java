@@ -18,10 +18,17 @@ import com.google.android.gms.tasks.TaskExecutors;
 import com.google.android.gms.tasks.Tasks;
 import com.google.android.odml.image.BitmapMlImageBuilder;
 import com.google.android.odml.image.ByteBufferMlImageBuilder;
-import com.google.android.odml.image.MediaMlImageBuilder;
 import com.google.android.odml.image.MlImage;
 import com.google.mlkit.common.MlKitException;
+import com.google.mlkit.vision.posedetection.camera.CameraImageGraphic;
+import com.google.mlkit.vision.posedetection.camera.FrameMetadata;
+import com.google.mlkit.vision.posedetection.graphic.GraphicOverlay;
+import com.google.mlkit.vision.posedetection.graphic.InferenceInfoGraphic;
+import com.google.mlkit.vision.posedetection.utils.PreferenceUtils;
 import com.google.mlkit.vision.common.InputImage;
+import com.google.mlkit.vision.posedetection.utils.BitmapUtils;
+import com.google.mlkit.vision.posedetection.utils.ScopedExecutor;
+import com.google.mlkit.vision.posedetection.utils.TemperatureMonitor;
 
 import java.nio.ByteBuffer;
 import java.util.Timer;

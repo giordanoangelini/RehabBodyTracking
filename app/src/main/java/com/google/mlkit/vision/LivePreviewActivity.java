@@ -6,12 +6,12 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.gms.common.annotation.KeepName;
-import com.google.mlkit.vision.posedetection.CameraSource;
-import com.google.mlkit.vision.posedetection.CameraSourcePreview;
-import com.google.mlkit.vision.posedetection.GraphicOverlay;
+import com.google.mlkit.vision.posedetection.camera.CameraSource;
+import com.google.mlkit.vision.posedetection.camera.CameraSourcePreview;
+import com.google.mlkit.vision.posedetection.graphic.GraphicOverlay;
 import com.google.mlkit.vision.posedetection.posedetector.PoseDetectorProcessor;
-import com.google.mlkit.vision.posedetection.PreferenceUtils;
 import com.google.mlkit.vision.pose.PoseDetectorOptionsBase;
+import com.google.mlkit.vision.posedetection.utils.PreferenceUtils;
 
 import java.io.IOException;
 
@@ -52,11 +52,12 @@ public final class LivePreviewActivity extends AppCompatActivity {
     try {
 
         PoseDetectorOptionsBase poseDetectorOptions =
-            PreferenceUtils.getPoseDetectorOptionsForLivePreview(this);
+            PreferenceUtils.getPoseDetectorOptionsForLivePreview();
         Log.i(TAG, "Using Pose Detector with options " + poseDetectorOptions);
 
         boolean shouldShowInFrameLikelihood =
             PreferenceUtils.showPoseDetectionInFrameLikelihood;
+        boolean hideBodyLines = PreferenceUtils.hideBodyLines;
         boolean visualizeZ = PreferenceUtils.poseDetectionVisualizeZ;
         boolean rescaleZ = PreferenceUtils.poseDetectionRescaleZForVisualization;
         boolean runClassification = PreferenceUtils.poseDetectionRunClassification;
@@ -66,6 +67,7 @@ public final class LivePreviewActivity extends AppCompatActivity {
                 this,
                 poseDetectorOptions,
                 shouldShowInFrameLikelihood,
+                hideBodyLines,
                 visualizeZ,
                 rescaleZ,
                 runClassification,

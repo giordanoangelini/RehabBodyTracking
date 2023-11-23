@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.Task;
 import com.google.android.odml.image.MlImage;
 import com.google.mlkit.vision.common.InputImage;
-import com.google.mlkit.vision.posedetection.GraphicOverlay;
+import com.google.mlkit.vision.posedetection.graphic.GraphicOverlay;
 import com.google.mlkit.vision.posedetection.VisionProcessorBase;
 import com.google.mlkit.vision.posedetection.posedetector.classification.PoseClassifierProcessor;
 import com.google.mlkit.vision.pose.Pose;
@@ -26,6 +26,7 @@ public class PoseDetectorProcessor
   private final PoseDetector detector;
 
   private final boolean showInFrameLikelihood;
+  private final boolean hideBodyLines;
   private final boolean visualizeZ;
   private final boolean rescaleZForVisualization;
   private final boolean runClassification;
@@ -57,12 +58,14 @@ public class PoseDetectorProcessor
       Context context,
       PoseDetectorOptionsBase options,
       boolean showInFrameLikelihood,
+      boolean hideBodyLines,
       boolean visualizeZ,
       boolean rescaleZForVisualization,
       boolean runClassification,
       boolean isStreamMode) {
     super(context);
     this.showInFrameLikelihood = showInFrameLikelihood;
+    this.hideBodyLines = hideBodyLines;
     this.visualizeZ = visualizeZ;
     this.rescaleZForVisualization = rescaleZForVisualization;
     detector = PoseDetection.getClient(options);
@@ -125,6 +128,7 @@ public class PoseDetectorProcessor
             graphicOverlay,
             poseWithClassification.pose,
             showInFrameLikelihood,
+            hideBodyLines,
             visualizeZ,
             rescaleZForVisualization,
             poseWithClassification.classificationResult));

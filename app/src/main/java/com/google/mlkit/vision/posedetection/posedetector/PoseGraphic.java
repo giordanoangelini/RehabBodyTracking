@@ -7,10 +7,12 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import com.google.mlkit.vision.common.PointF3D;
-import com.google.mlkit.vision.posedetection.GraphicOverlay;
-import com.google.mlkit.vision.posedetection.GraphicOverlay.Graphic;
+import com.google.mlkit.vision.posedetection.graphic.GraphicOverlay;
+import com.google.mlkit.vision.posedetection.graphic.GraphicOverlay.Graphic;
 import com.google.mlkit.vision.pose.Pose;
 import com.google.mlkit.vision.pose.PoseLandmark;
+import com.google.mlkit.vision.posedetection.utils.PreferenceUtils;
+
 import java.util.List;
 import java.util.Locale;
 
@@ -24,6 +26,7 @@ public class PoseGraphic extends Graphic {
 
   private final Pose pose;
   private final boolean showInFrameLikelihood;
+  private final boolean hideBodyLines;
   private final boolean visualizeZ;
   private final boolean rescaleZForVisualization;
   private float zMin = Float.MAX_VALUE;
@@ -39,12 +42,14 @@ public class PoseGraphic extends Graphic {
       GraphicOverlay overlay,
       Pose pose,
       boolean showInFrameLikelihood,
+      boolean hideBodyLines,
       boolean visualizeZ,
       boolean rescaleZForVisualization,
       List<String> poseClassification) {
     super(overlay);
     this.pose = pose;
     this.showInFrameLikelihood = showInFrameLikelihood;
+    this.hideBodyLines = hideBodyLines;
     this.visualizeZ = visualizeZ;
     this.rescaleZForVisualization = rescaleZForVisualization;
 
@@ -169,7 +174,7 @@ public class PoseGraphic extends Graphic {
     drawLine(canvas, rightHeel, rightFootIndex, rightPaint);
 
     // Draw inFrameLikelihood for all points
-    if (showInFrameLikelihood) {
+    if (showInFrameLikelihood && !hideBodyLines) {
       for (PoseLandmark landmark : landmarks) {
         canvas.drawText(
             String.format(Locale.US, "%.2f", landmark.getInFrameLikelihood()),
@@ -181,6 +186,8 @@ public class PoseGraphic extends Graphic {
   }
 
   void drawPoint(Canvas canvas, PoseLandmark landmark, Paint paint) {
+    if(hideBodyLines) return;
+
     PointF3D point = landmark.getPosition3D();
     updatePaintColorByZValue(
         paint, canvas, visualizeZ, rescaleZForVisualization, point.getZ(), zMin, zMax);
@@ -188,6 +195,8 @@ public class PoseGraphic extends Graphic {
   }
 
   void drawLine(Canvas canvas, PoseLandmark startLandmark, PoseLandmark endLandmark, Paint paint) {
+    if(hideBodyLines) return;
+
     PointF3D start = startLandmark.getPosition3D();
     PointF3D end = endLandmark.getPosition3D();
 

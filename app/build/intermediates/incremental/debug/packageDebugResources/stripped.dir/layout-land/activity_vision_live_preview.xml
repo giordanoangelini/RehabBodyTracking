@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:keepScreenOn="true">
 
-  <com.google.mlkit.vision.posedetection.CameraSourcePreview
+  <com.google.mlkit.vision.posedetection.camera.CameraSourcePreview
       android:id="@+id/preview_view"
       android:layout_width="match_parent"
       android:layout_height="match_parent"/>
 
-  <com.google.mlkit.vision.posedetection.GraphicOverlay
+  <com.google.mlkit.vision.posedetection.graphic.GraphicOverlay
       android:id="@+id/graphic_overlay"
       android:layout_width="match_parent"
       android:layout_height="match_parent"/>

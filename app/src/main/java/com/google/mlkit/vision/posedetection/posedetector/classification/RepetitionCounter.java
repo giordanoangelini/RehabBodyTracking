@@ -1,5 +1,7 @@
 package com.google.mlkit.vision.posedetection.posedetector.classification;
 
+import android.util.Log;
+
 /**
  * Counts reps for the give class.
  */
