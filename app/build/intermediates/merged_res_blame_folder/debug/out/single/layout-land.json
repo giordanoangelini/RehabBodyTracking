@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.google.mlkit.vision.app-mergeDebugResources-25:/layout-land/activity_vision_live_preview.xml",
+        "source": "com.google.mlkit.vision.app-main-28:/layout-land/activity_vision_live_preview.xml"
+    }
+]

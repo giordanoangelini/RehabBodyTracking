@@ -21,8 +21,8 @@ com.google.mlkit.vision.app-lifecycle-viewmodel-2.5.1-19 /Users/giordano/.gradle
 com.google.mlkit.vision.app-lifecycle-livedata-core-2.5.1-20 /Users/giordano/.gradle/caches/transforms-3/f466aad184fb88972157f540689bde08/transformed/lifecycle-livedata-core-2.5.1/res
 com.google.mlkit.vision.app-jetified-play-services-base-18.1.0-21 /Users/giordano/.gradle/caches/transforms-3/fbcee25c2db3403d438230f5cbed0fdd/transformed/jetified-play-services-base-18.1.0/res
 com.google.mlkit.vision.app-resValues-22 /Users/giordano/StudioProjects/RehabBodyTracking/app/build/generated/res/resValues/debug
-com.google.mlkit.vision.app-mergeDebugResources-23 /Users/giordano/StudioProjects/RehabBodyTracking/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.google.mlkit.vision.app-mergeDebugResources-24 /Users/giordano/StudioProjects/RehabBodyTracking/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.google.mlkit.vision.app-packageDebugResources-23 /Users/giordano/StudioProjects/RehabBodyTracking/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.google.mlkit.vision.app-packageDebugResources-24 /Users/giordano/StudioProjects/RehabBodyTracking/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
 com.google.mlkit.vision.app-merged_res-25 /Users/giordano/StudioProjects/RehabBodyTracking/app/build/intermediates/merged_res/debug
 com.google.mlkit.vision.app-debug-26 /Users/giordano/StudioProjects/RehabBodyTracking/app/src/debug/res
 com.google.mlkit.vision.app-main-27 /Users/giordano/StudioProjects/RehabBodyTracking/app/src/main/res

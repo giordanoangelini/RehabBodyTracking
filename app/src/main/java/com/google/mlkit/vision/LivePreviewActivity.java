@@ -56,10 +56,10 @@ public final class LivePreviewActivity extends AppCompatActivity {
         Log.i(TAG, "Using Pose Detector with options " + poseDetectorOptions);
 
         boolean shouldShowInFrameLikelihood =
-            PreferenceUtils.shouldShowPoseDetectionInFrameLikelihoodLivePreview(this);
-        boolean visualizeZ = PreferenceUtils.shouldPoseDetectionVisualizeZ(this);
-        boolean rescaleZ = PreferenceUtils.shouldPoseDetectionRescaleZForVisualization(this);
-        boolean runClassification = PreferenceUtils.shouldPoseDetectionRunClassification(this);
+            PreferenceUtils.showPoseDetectionInFrameLikelihood;
+        boolean visualizeZ = PreferenceUtils.poseDetectionVisualizeZ;
+        boolean rescaleZ = PreferenceUtils.poseDetectionRescaleZForVisualization;
+        boolean runClassification = PreferenceUtils.poseDetectionRunClassification;
 
         cameraSource.setMachineLearningFrameProcessor(
             new PoseDetectorProcessor(

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.google.mlkit.vision.app-mergeDebugResources-25:/layout/activity_vision_live_preview.xml",
+        "source": "com.google.mlkit.vision.app-main-28:/layout/activity_vision_live_preview.xml"
+    },
+    {
+        "merged": "com.google.mlkit.vision.app-mergeDebugResources-25:/layout/activity_chooser.xml",
+        "source": "com.google.mlkit.vision.app-main-28:/layout/activity_chooser.xml"
+    },
+    {
+        "merged": "com.google.mlkit.vision.app-mergeDebugResources-25:/layout/activity_vision_entry_choice.xml",
+        "source": "com.google.mlkit.vision.app-main-28:/layout/activity_vision_entry_choice.xml"
+    }
+]
