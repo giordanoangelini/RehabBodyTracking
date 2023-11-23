@@ -1,0 +1,7 @@
+#Thu Nov 23 16:28:21 CET 2023
+base.0=/Users/giordano/StudioProjects/RehabBodyTracking/app/build/intermediates/dex/debugAndroidTest/mergeDexDebugAndroidTest/classes.dex
+base.1=/Users/giordano/StudioProjects/RehabBodyTracking/app/build/intermediates/dex/debugAndroidTest/mergeDexDebugAndroidTest/classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

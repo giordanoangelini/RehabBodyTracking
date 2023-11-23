@@ -12,11 +12,15 @@
         "source": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-main-28:/layout/list_layout.xml"
     },
     {
-        "merged": "com.google.mlkit.vision.app-mergeDebugResources-25:/layout/list_layout.xml",
-        "source": "com.google.mlkit.vision.app-main-28:/layout/list_layout.xml"
+        "merged": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-mergeDebugResources-25:/layout/activity_settings.xml",
+        "source": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-main-28:/layout/activity_settings.xml"
     },
     {
         "merged": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-mergeDebugResources-25:/layout/activity_chooser.xml",
         "source": "/Users/giordano/.gradle/daemon/8.0/com.google.mlkit.vision.app-main-28:/layout/activity_chooser.xml"
+    },
+    {
+        "merged": "com.google.mlkit.vision.app-mergeDebugResources-25:/layout/exercise_chooser.xml",
+        "source": "com.google.mlkit.vision.app-main-28:/layout/exercise_chooser.xml"
     }
 ]

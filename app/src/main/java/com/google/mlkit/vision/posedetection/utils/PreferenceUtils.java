@@ -38,10 +38,4 @@ public class PreferenceUtils {
       return builder.build();
     }
   }
-  public static final PoseClass[] EXERCISE_LIST = new PoseClass[]{
-            new PoseClass("squats_down", R.string.pose_detection_squat_description),
-            new PoseClass("pushups_down", R.string.pose_detection_pushup_description)
-  };
-
-  public static PoseClass SELECTED_EXERCISE;
 }

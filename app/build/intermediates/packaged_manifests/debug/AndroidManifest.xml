@@ -65,12 +65,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mlkit.vision.ChooserActivity"
+            android:name="com.google.mlkit.vision.ExerciseChooser"
             android:exported="false"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
             android:name="com.google.mlkit.vision.LivePreviewActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.google.mlkit.vision.SettingsActivity"
             android:exported="false"
             android:theme="@style/AppTheme" >
         </activity>

@@ -1,5 +1,6 @@
 package com.google.mlkit.vision.posedetection.posedetector.classification;
 
+import com.google.mlkit.vision.ExerciseChooser;
 import com.google.mlkit.vision.posedetection.posedetector.PoseClass;
 import android.content.Context;
 import android.media.AudioManager;
@@ -67,8 +68,8 @@ public class PoseClassifierProcessor {
     }
     poseClassifier = new PoseClassifier(poseSamples);
     if (isStreamMode) {
-      for (PoseClass exercise : PreferenceUtils.EXERCISE_LIST) {
-        if(exercise == PreferenceUtils.SELECTED_EXERCISE)
+      for (PoseClass exercise : ExerciseChooser.EXERCISE_LIST) {
+        if(exercise == ExerciseChooser.SELECTED_EXERCISE)
           repCounters.add(new RepetitionCounter(exercise.getClass_label()));
       }
     }
