@@ -25,8 +25,10 @@ public final class ExerciseChooser extends AppCompatActivity
   private static final String TAG = "ChooserActivity";
 
   public static final PoseClass[] EXERCISE_LIST = new PoseClass[]{
-          new PoseClass("squats_down", R.string.pose_detection_squats_title, R.string.pose_detection_squats_description),
-          new PoseClass("pushups_down", R.string.pose_detection_pushups_title, R.string.pose_detection_pushups_description)
+          new PoseClass("squats_down", 0, R.string.pose_detection_squats_title, R.string.pose_detection_squats_description),
+          new PoseClass("pushups_down", 0, R.string.pose_detection_pushups_title, R.string.pose_detection_pushups_description),
+          new PoseClass("squats_down", 1, R.string.pose_detection_squats_hold_title, R.string.pose_detection_squats_hold_description),
+          new PoseClass("pushups_down", 1, R.string.pose_detection_pushups_hold_title, R.string.pose_detection_pushups_hold_description)
   };
 
   public static PoseClass SELECTED_EXERCISE;
@@ -63,7 +65,6 @@ public final class ExerciseChooser extends AppCompatActivity
         startActivity(new Intent(this, SettingsActivity.class));
       } catch (Exception e) {
         e.printStackTrace();
-        Log.e("giordano", "onCreate: ", e);
       }
     });
   }

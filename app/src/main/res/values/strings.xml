@@ -10,10 +10,14 @@
     <string name="menu_item_settings" translatable="true">Settings</string>
 
     <!-- EXERCISES STRINGS -->
-    <string name="pose_detection_squats_title">Squats - reps</string>
+    <string name="pose_detection_squats_title">Squats - Reps</string>
     <string name="pose_detection_squats_description">Some description</string>
-    <string name="pose_detection_pushups_title">Pushups - reps</string>
+    <string name="pose_detection_pushups_title">Pushups - Reps</string>
     <string name="pose_detection_pushups_description">Some description</string>
+    <string name="pose_detection_squats_hold_title">Squats - Hold</string>
+    <string name="pose_detection_squats_hold_description">Some description</string>
+    <string name="pose_detection_pushups_hold_title">Pushups - Hold</string>
+    <string name="pose_detection_pushups_hold_description">Some description</string>
 
     <!-- SETTINGS STRINGS -->
     <string name="show_info_preference_key">hipk</string>
