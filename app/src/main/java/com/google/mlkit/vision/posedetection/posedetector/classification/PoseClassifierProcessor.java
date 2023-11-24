@@ -70,7 +70,7 @@ public class PoseClassifierProcessor {
     if (isStreamMode) {
       for (PoseClass exercise : ExerciseChooser.EXERCISE_LIST) {
         if(exercise == ExerciseChooser.SELECTED_EXERCISE)
-          repCounters.add(new RepetitionCounter(exercise.getClass_label()));
+          repCounters.add(new RepetitionCounter(exercise.getPose_key()));
       }
     }
   }

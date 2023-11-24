@@ -1,4 +1,4 @@
-#Thu Nov 23 19:05:33 CET 2023
+#Fri Nov 24 10:50:44 CET 2023
 base.0=/Users/giordano/StudioProjects/RehabBodyTracking/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/giordano/StudioProjects/RehabBodyTracking/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/giordano/StudioProjects/RehabBodyTracking/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex

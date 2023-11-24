@@ -25,8 +25,8 @@ public final class ExerciseChooser extends AppCompatActivity
   private static final String TAG = "ChooserActivity";
 
   public static final PoseClass[] EXERCISE_LIST = new PoseClass[]{
-          new PoseClass("squats_down", R.string.pose_detection_squat_description),
-          new PoseClass("pushups_down", R.string.pose_detection_pushup_description)
+          new PoseClass("squats_down", R.string.pose_detection_squats_title, R.string.pose_detection_squats_description),
+          new PoseClass("pushups_down", R.string.pose_detection_pushups_title, R.string.pose_detection_pushups_description)
   };
 
   public static PoseClass SELECTED_EXERCISE;
@@ -95,7 +95,7 @@ public final class ExerciseChooser extends AppCompatActivity
         view = inflater.inflate(R.layout.list_layout, null);
       }
 
-      ((TextView) view.findViewById(R.id.big_title)).setText(classes[position].getClass_label());
+      ((TextView) view.findViewById(R.id.big_title)).setText(classes[position].getLabel_id());
       ((TextView) view.findViewById(R.id.small_title)).setText(classes[position].getDescription_id());
 
       return view;
