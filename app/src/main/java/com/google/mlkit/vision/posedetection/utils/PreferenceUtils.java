@@ -10,15 +10,28 @@ import com.google.mlkit.vision.pose.defaults.PoseDetectorOptions;
 import com.google.mlkit.vision.posedetection.posedetector.PoseClass;
 
 public class PreferenceUtils {
-  public static boolean hideDetectionInfo = true;
   public static boolean preferGPUForPoseDetection = true;
-  public static boolean hideBodyLines = false;
   public static boolean showPoseDetectionInFrameLikelihood = true;
   public static boolean poseDetectionVisualizeZ = true;
   public static boolean poseDetectionRescaleZForVisualization = true;
-  public static boolean poseDetectionRunClassification = true;
   public static String detectionMode = "Fast";
   public static boolean isCameraLiveViewportEnabled = false;
+
+  public static boolean showDetectionInfo(Context context) {
+    SharedPreferences sharedPreferences = context.getSharedPreferences(context.getPackageName(),Context.MODE_PRIVATE);
+    String prefKey = context.getString(R.string.show_info_preference_key);
+    return sharedPreferences.getBoolean(prefKey, false);
+  }
+  public static boolean showBodyLines(Context context) {
+    SharedPreferences sharedPreferences = context.getSharedPreferences(context.getPackageName(),Context.MODE_PRIVATE);
+    String prefKey = context.getString(R.string.show_body_lines_preferences_key);
+    return sharedPreferences.getBoolean(prefKey, false);
+  }
+  public static boolean poseDetectionRunClassification(Context context) {
+    SharedPreferences sharedPreferences = context.getSharedPreferences(context.getPackageName(),Context.MODE_PRIVATE);
+    String prefKey = context.getString(R.string.run_classification_preferences_key);
+    return sharedPreferences.getBoolean(prefKey, true);
+  }
 
   public static PoseDetectorOptionsBase getPoseDetectorOptionsForLivePreview() {
     if (detectionMode.equals("Fast")) {

@@ -47,7 +47,7 @@ public final class ExerciseChooser extends AppCompatActivity
     super.onCreate(savedInstanceState);
     Log.d(TAG, "onCreate");
 
-    setContentView(R.layout.exercise_chooser);
+    setContentView(R.layout.activity_exercise_chooser);
 
     // Set up ListView and Adapter
     ListView listView = findViewById(R.id.test_activity_list_view);

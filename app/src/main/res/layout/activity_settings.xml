@@ -5,4 +5,49 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/settings_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="@string/menu_item_settings"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:alpha="1"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/show_info_pref_id"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:text="@string/show_info_preference_title"
+        android:tag="@string/show_info_preference_key"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/show_body_lines_pref_id"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="50dp"
+        android:tag="@string/show_body_lines_preferences_key"
+        android:textStyle="bold"
+        android:text="@string/show_body_lines_preferences_title" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/run_classification_pref_id"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:tag="@string/run_classification_preferences_key"
+        android:text="@string/run_classification_preferences_title" />
+
 </LinearLayout>

@@ -28,7 +28,7 @@ public final class LivePreviewActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    setContentView(R.layout.activity_vision_live_preview);
+    setContentView(R.layout.activity_live_preview);
 
     preview = findViewById(R.id.preview_view);
     if (preview == null) {
@@ -57,10 +57,10 @@ public final class LivePreviewActivity extends AppCompatActivity {
 
         boolean shouldShowInFrameLikelihood =
             PreferenceUtils.showPoseDetectionInFrameLikelihood;
-        boolean hideBodyLines = PreferenceUtils.hideBodyLines;
+        boolean hideBodyLines = !PreferenceUtils.showBodyLines(this);
         boolean visualizeZ = PreferenceUtils.poseDetectionVisualizeZ;
         boolean rescaleZ = PreferenceUtils.poseDetectionRescaleZForVisualization;
-        boolean runClassification = PreferenceUtils.poseDetectionRunClassification;
+        boolean runClassification = PreferenceUtils.poseDetectionRunClassification(this);
 
         cameraSource.setMachineLearningFrameProcessor(
             new PoseDetectorProcessor(

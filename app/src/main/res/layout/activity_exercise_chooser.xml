@@ -11,9 +11,10 @@
 
   <ImageButton
       android:id="@+id/settings_button"
-      android:layout_width="40dp"
-      android:layout_height="40dp"
-      android:layout_margin="16dp"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_marginHorizontal="12dp"
+      android:layout_marginTop="12dp"
       android:scaleType="fitCenter"
       android:contentDescription="@string/menu_item_settings"
       android:src="@drawable/settings_icon"

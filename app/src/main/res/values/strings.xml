@@ -16,8 +16,8 @@
     <string name="pose_detection_pushups_description">Some description</string>
 
     <!-- SETTINGS STRINGS -->
-    <string name="hide_info_preference_key">hipk</string>
-    <string name="hide_info_preference_title">Hide metadata info on detection</string>
+    <string name="show_info_preference_key">hipk</string>
+    <string name="show_info_preference_title">Show metadata info on detection</string>
     <string name="show_body_lines_preferences_key">sblpk</string>
     <string name="show_body_lines_preferences_title">Show body lines</string>
     <string name="run_classification_preferences_key">rcpk</string>

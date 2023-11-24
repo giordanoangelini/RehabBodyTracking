@@ -16,7 +16,7 @@ class EntryChoiceActivity : AppCompatActivity(), ActivityCompat.OnRequestPermiss
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_vision_entry_choice)
+    setContentView(R.layout.activity_entry_choice)
 
     findViewById<TextView>(R.id.java_entry_point).setOnClickListener {
       val intent = Intent(this@EntryChoiceActivity, ExerciseChooser::class.java)
