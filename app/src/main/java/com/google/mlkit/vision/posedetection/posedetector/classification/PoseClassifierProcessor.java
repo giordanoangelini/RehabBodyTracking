@@ -78,13 +78,10 @@ public class PoseClassifierProcessor {
   /**
    * Given a new {@link Pose} input, returns a list of formatted {@link String}s with Pose
    * classification results.
-   *
-   * <p>Currently it returns up to 2 strings as following:
-   * 0: PoseClass : X reps
-   * 1: PoseClass : [0.0-1.0] confidence
    */
   @WorkerThread
   public List<String> getPoseResult(Pose pose) {
+
     Preconditions.checkState(Looper.myLooper() != Looper.getMainLooper());
     List<String> result = new ArrayList<>();
     ClassificationResult classification = poseClassifier.classify(pose);
@@ -118,8 +115,8 @@ public class PoseClassifierProcessor {
       String maxConfidenceClassResult = String.format(
           Locale.US,
           "%s : %.2f confidence",
-          maxConfidenceClass,
-          classification.getClassConfidence(maxConfidenceClass)
+          ExerciseChooser.SELECTED_EXERCISE.getPose_key(),
+          classification.getClassConfidence(ExerciseChooser.SELECTED_EXERCISE.getPose_key())
               / poseClassifier.confidenceRange());
       result.add(maxConfidenceClassResult);
     }

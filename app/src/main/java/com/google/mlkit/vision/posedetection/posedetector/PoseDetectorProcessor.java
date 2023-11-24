@@ -1,6 +1,7 @@
 package com.google.mlkit.vision.posedetection.posedetector;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.util.Log;
 import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.Task;
@@ -74,6 +75,9 @@ public class PoseDetectorProcessor
     this.context = context;
     classificationExecutor = Executors.newSingleThreadExecutor();
   }
+
+  @Override
+  public void processBitmap(Bitmap bitmap, GraphicOverlay graphicOverlay) {  }
 
   @Override
   public void stop() {

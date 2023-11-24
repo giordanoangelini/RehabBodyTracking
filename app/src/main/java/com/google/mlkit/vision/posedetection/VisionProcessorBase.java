@@ -96,32 +96,6 @@ public abstract class VisionProcessorBase<T> implements VisionImageProcessor {
     temperatureMonitor = new TemperatureMonitor(context);
   }
 
-  // -----------------Code for processing single still image----------------------------------------
-  @Override
-  public void processBitmap(Bitmap bitmap, final GraphicOverlay graphicOverlay) {
-    long frameStartMs = SystemClock.elapsedRealtime();
-
-    if (isMlImageEnabled(graphicOverlay.getContext())) {
-      MlImage mlImage = new BitmapMlImageBuilder(bitmap).build();
-      requestDetectInImage(
-          mlImage,
-          graphicOverlay,
-          /* originalCameraImage= */ null,
-          /* shouldShowFps= */ false,
-          frameStartMs);
-      mlImage.close();
-
-      return;
-    }
-
-    requestDetectInImage(
-        InputImage.fromBitmap(bitmap, 0),
-        graphicOverlay,
-        /* originalCameraImage= */ null,
-        /* shouldShowFps= */ false,
-        frameStartMs);
-  }
-
   // -----------------Code for processing live preview frame from Camera1 API-----------------------
   @Override
   public synchronized void processByteBuffer(
