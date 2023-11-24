@@ -24,6 +24,10 @@ public class PoseClass {
     public int getDescription_id() {
         return description_id;
     }
+
+    public int getExercise_mode() {
+        return exercise_mode;
+    }
 }
 
 

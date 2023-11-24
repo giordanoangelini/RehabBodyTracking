@@ -3,8 +3,6 @@ package com.google.mlkit.vision.posedetection.posedetector.classification;
 import com.google.mlkit.vision.ExerciseChooser;
 import com.google.mlkit.vision.posedetection.posedetector.PoseClass;
 import android.content.Context;
-import android.media.AudioManager;
-import android.media.ToneGenerator;
 import android.os.Looper;
 import android.util.Log;
 import androidx.annotation.WorkerThread;
@@ -16,6 +14,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
@@ -34,16 +33,20 @@ public class PoseClassifierProcessor {
 
   private EMASmoothing emaSmoothing;
   private List<RepetitionCounter> repCounters;
+  private List<PoseTimer> poseTimers;
   private PoseClassifier poseClassifier;
   private String lastRepResult;
+  private Context context;
 
   @WorkerThread
   public PoseClassifierProcessor(Context context, boolean isStreamMode) {
     Preconditions.checkState(Looper.myLooper() != Looper.getMainLooper());
     this.isStreamMode = isStreamMode;
+    this.context = context;
     if (isStreamMode) {
       emaSmoothing = new EMASmoothing();
       repCounters = new ArrayList<>();
+      poseTimers = new ArrayList<>();
       lastRepResult = "";
     }
     loadPoseSamples(context);
@@ -69,8 +72,10 @@ public class PoseClassifierProcessor {
     poseClassifier = new PoseClassifier(poseSamples);
     if (isStreamMode) {
       for (PoseClass exercise : ExerciseChooser.EXERCISE_LIST) {
-        if(exercise == ExerciseChooser.SELECTED_EXERCISE)
+        if(exercise == ExerciseChooser.SELECTED_EXERCISE && exercise.getExercise_mode() == 0)
           repCounters.add(new RepetitionCounter(exercise.getPose_key()));
+        else if(exercise == ExerciseChooser.SELECTED_EXERCISE && exercise.getExercise_mode() == 1)
+          poseTimers.add(new PoseTimer(exercise.getPose_key()));
       }
     }
   }
@@ -81,6 +86,8 @@ public class PoseClassifierProcessor {
    */
   @WorkerThread
   public List<String> getPoseResult(Pose pose) {
+
+    if(!PreferenceUtils.showClassificationResults(this.context)) return Collections.emptyList();
 
     Preconditions.checkState(Looper.myLooper() != Looper.getMainLooper());
     List<String> result = new ArrayList<>();
@@ -106,12 +113,21 @@ public class PoseClassifierProcessor {
           break;
         }
       }
+
+      String maxConfidenceClass = classification.getMaxConfidenceClass();
+      
+      for (PoseTimer poseTimer : poseTimers) {
+        poseTimer.setCondition(maxConfidenceClass.equals(poseTimer.getClassName()));
+        poseTimer.startTimer();
+        lastRepResult = String.format(
+                Locale.US, "%s : %d seconds", poseTimer.getClassName(), poseTimer.getTimerValue());
+        }
+
       result.add(lastRepResult);
     }
 
     // Add maxConfidence class of current frame to result if pose is found.
     if (!pose.getAllPoseLandmarks().isEmpty()) {
-      String maxConfidenceClass = classification.getMaxConfidenceClass();
       String maxConfidenceClassResult = String.format(
           Locale.US,
           "%s : %.2f confidence",

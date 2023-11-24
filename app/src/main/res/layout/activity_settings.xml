@@ -42,12 +42,12 @@
         android:text="@string/show_body_lines_preferences_title" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/run_classification_pref_id"
+        android:id="@+id/show_classification_pref_id"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="30dp"
         android:layout_height="50dp"
         android:textStyle="bold"
-        android:tag="@string/run_classification_preferences_key"
-        android:text="@string/run_classification_preferences_title" />
+        android:tag="@string/show_classification_results_preferences_key"
+        android:text="@string/show_classification_results_preferences_title" />
 
 </LinearLayout>

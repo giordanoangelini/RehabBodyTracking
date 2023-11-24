@@ -32,8 +32,8 @@ public class SettingsActivity extends AppCompatActivity {
     show_body_lines.setChecked(PreferenceUtils.showBodyLines(this));
     show_body_lines.setOnCheckedChangeListener(listener);
 
-    SwitchCompat run_class = (SwitchCompat) findViewById(R.id.run_classification_pref_id);
-    run_class.setChecked(PreferenceUtils.poseDetectionRunClassification(this));
+    SwitchCompat run_class = (SwitchCompat) findViewById(R.id.show_classification_pref_id);
+    run_class.setChecked(PreferenceUtils.showClassificationResults(this));
     run_class.setOnCheckedChangeListener(listener);
   }
 

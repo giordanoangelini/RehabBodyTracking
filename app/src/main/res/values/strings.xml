@@ -24,7 +24,7 @@
     <string name="show_info_preference_title">Show metadata info on detection</string>
     <string name="show_body_lines_preferences_key">sblpk</string>
     <string name="show_body_lines_preferences_title">Show body lines</string>
-    <string name="run_classification_preferences_key">rcpk</string>
-    <string name="run_classification_preferences_title">Run Classification</string>
+    <string name="show_classification_results_preferences_key">scrpk</string>
+    <string name="show_classification_results_preferences_title">Show classification results</string>
 
 </resources>

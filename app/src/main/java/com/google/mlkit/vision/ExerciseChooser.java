@@ -24,6 +24,7 @@ public final class ExerciseChooser extends AppCompatActivity
     implements AdapterView.OnItemClickListener {
   private static final String TAG = "ChooserActivity";
 
+  // 0 for reps - 1 for hold
   public static final PoseClass[] EXERCISE_LIST = new PoseClass[]{
           new PoseClass("squats_down", 0, R.string.pose_detection_squats_title, R.string.pose_detection_squats_description),
           new PoseClass("pushups_down", 0, R.string.pose_detection_pushups_title, R.string.pose_detection_pushups_description),

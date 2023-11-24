@@ -14,6 +14,7 @@ public class PreferenceUtils {
   public static boolean showPoseDetectionInFrameLikelihood = true;
   public static boolean poseDetectionVisualizeZ = true;
   public static boolean poseDetectionRescaleZForVisualization = true;
+  public static boolean poseDetectionRunClassification = true;
   public static String detectionMode = "Fast";
   public static boolean isCameraLiveViewportEnabled = false;
 
@@ -27,9 +28,9 @@ public class PreferenceUtils {
     String prefKey = context.getString(R.string.show_body_lines_preferences_key);
     return sharedPreferences.getBoolean(prefKey, false);
   }
-  public static boolean poseDetectionRunClassification(Context context) {
+  public static boolean showClassificationResults(Context context) {
     SharedPreferences sharedPreferences = context.getSharedPreferences(context.getPackageName(),Context.MODE_PRIVATE);
-    String prefKey = context.getString(R.string.run_classification_preferences_key);
+    String prefKey = context.getString(R.string.show_classification_results_preferences_key);
     return sharedPreferences.getBoolean(prefKey, true);
   }
 

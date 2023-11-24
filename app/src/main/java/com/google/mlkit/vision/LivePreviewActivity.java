@@ -60,7 +60,7 @@ public final class LivePreviewActivity extends AppCompatActivity {
         boolean hideBodyLines = !PreferenceUtils.showBodyLines(this);
         boolean visualizeZ = PreferenceUtils.poseDetectionVisualizeZ;
         boolean rescaleZ = PreferenceUtils.poseDetectionRescaleZForVisualization;
-        boolean runClassification = PreferenceUtils.poseDetectionRunClassification(this);
+        boolean runClassification = PreferenceUtils.poseDetectionRunClassification;
 
         cameraSource.setMachineLearningFrameProcessor(
             new PoseDetectorProcessor(
