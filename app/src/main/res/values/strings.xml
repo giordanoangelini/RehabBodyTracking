@@ -10,17 +10,16 @@
     <string name="menu_item_settings" translatable="true">Settings</string>
 
     <!-- EXERCISES STRINGS -->
-    <string name="pose_detection_squats_title">Squats - Reps</string>
+    <string name="pose_detection_squats_title">Squats</string>
     <string name="pose_detection_squats_description">Some description</string>
-    <string name="pose_detection_pushups_title">Pushups - Reps</string>
+    <string name="pose_detection_pushups_title">Pushups</string>
     <string name="pose_detection_pushups_description">Some description</string>
-    <string name="pose_detection_squats_hold_title">Squats - Hold</string>
-    <string name="pose_detection_squats_hold_description">Some description</string>
-    <string name="pose_detection_pushups_hold_title">Pushups - Hold</string>
-    <string name="pose_detection_pushups_hold_description">Some description</string>
 
     <string name="pose_detection_sium_title">SIUUUUM</string>
-    <string name="pose_detection_sium_description"></string>
+    <string name="pose_detection_sium_description"> </string>
+
+    <string name="exercise_mode_reps">Reps</string>
+    <string name="exercise_mode_hold">Hold</string>
 
     <string name="pose_detection_explorer_title">Explorer</string>
     <string name="pose_detection_explorer_description">Test detection for all supported samples</string>

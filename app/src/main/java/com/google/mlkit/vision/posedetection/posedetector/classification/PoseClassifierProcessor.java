@@ -1,6 +1,7 @@
 package com.google.mlkit.vision.posedetection.posedetector.classification;
 
 import com.google.mlkit.vision.ExerciseChooser;
+import com.google.mlkit.vision.R;
 import com.google.mlkit.vision.posedetection.posedetector.ExerciseClass;
 import android.content.Context;
 import android.os.Looper;
@@ -72,9 +73,9 @@ public class PoseClassifierProcessor {
     }
     poseClassifier = new PoseClassifier(poseSamples);
     if (isStreamMode) {
-      if (ExerciseChooser.SELECTED_EXERCISE.getExercise_mode() == 0)
+      if (ExerciseChooser.SELECTED_EXERCISE.getExercise_mode().equals(context.getString(R.string.exercise_mode_reps)))
         repCounters.add(new RepetitionCounter(ExerciseChooser.SELECTED_EXERCISE.getPose_key()));
-      else if (ExerciseChooser.SELECTED_EXERCISE.getExercise_mode() == 1)
+      else if (ExerciseChooser.SELECTED_EXERCISE.getExercise_mode().equals(context.getString(R.string.exercise_mode_hold)))
         poseTimers.add(new PoseTimer(ExerciseChooser.SELECTED_EXERCISE.getPose_key()));
       else explorer_mode = true;
     }
