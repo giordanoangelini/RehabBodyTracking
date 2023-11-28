@@ -1,10 +1,13 @@
 package com.google.mlkit.vision.posedetection.posedetector.classification;
 
+import android.util.Log;
+
 public class PoseTimer {
 
     private int timerValue = 0; // Initial timer value in seconds
     private boolean isRunning = false;
     private boolean condition = false;
+    private static final float DEFAULT_THRESHOLD = 6f;
     private final String className;
 
     public String getClassName() {
@@ -27,12 +30,9 @@ public class PoseTimer {
         }
     }
 
-    public void stopTimer() {
-        isRunning = false;
-    }
-
-    public void setCondition(boolean condition) {
-        this.condition = condition;
+    public void setPoseConfidence(ClassificationResult classificationResult) {
+        float poseConfidence = classificationResult.getClassConfidence(className);
+        this.condition = poseConfidence >= DEFAULT_THRESHOLD;
     }
 
     private class TimerRunnable implements Runnable {

@@ -19,6 +19,12 @@
     <string name="pose_detection_pushups_hold_title">Pushups - Hold</string>
     <string name="pose_detection_pushups_hold_description">Some description</string>
 
+    <string name="pose_detection_sium_title">SIUUUUM</string>
+    <string name="pose_detection_sium_description"></string>
+
+    <string name="pose_detection_explorer_title">Explorer</string>
+    <string name="pose_detection_explorer_description">Test detection for all supported samples</string>
+
     <!-- SETTINGS STRINGS -->
     <string name="show_info_preference_key">hipk</string>
     <string name="show_info_preference_title">Show metadata info on detection</string>

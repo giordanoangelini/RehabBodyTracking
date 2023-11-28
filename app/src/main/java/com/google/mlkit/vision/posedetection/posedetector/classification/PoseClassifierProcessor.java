@@ -1,7 +1,7 @@
 package com.google.mlkit.vision.posedetection.posedetector.classification;
 
 import com.google.mlkit.vision.ExerciseChooser;
-import com.google.mlkit.vision.posedetection.posedetector.PoseClass;
+import com.google.mlkit.vision.posedetection.posedetector.ExerciseClass;
 import android.content.Context;
 import android.os.Looper;
 import android.util.Log;
@@ -23,7 +23,7 @@ import java.util.Locale;
  */
 public class PoseClassifierProcessor {
   private static final String TAG = "PoseClassifierProcessor";
-  private static final String POSE_SAMPLES_FILE = "pose/fitness_pose_samples.csv";
+  private static final String POSE_SAMPLES_FILE = "pose/fitness_pose_samples_exp.csv";
 
   // Specify classes for which we want rep counting.
   // These are the labels in the given {@code POSE_SAMPLES_FILE}. You can set your own class labels
@@ -36,7 +36,8 @@ public class PoseClassifierProcessor {
   private List<PoseTimer> poseTimers;
   private PoseClassifier poseClassifier;
   private String lastRepResult;
-  private Context context;
+  private final Context context;
+  private boolean explorer_mode = false;
 
   @WorkerThread
   public PoseClassifierProcessor(Context context, boolean isStreamMode) {
@@ -71,12 +72,11 @@ public class PoseClassifierProcessor {
     }
     poseClassifier = new PoseClassifier(poseSamples);
     if (isStreamMode) {
-      for (PoseClass exercise : ExerciseChooser.EXERCISE_LIST) {
-        if(exercise == ExerciseChooser.SELECTED_EXERCISE && exercise.getExercise_mode() == 0)
-          repCounters.add(new RepetitionCounter(exercise.getPose_key()));
-        else if(exercise == ExerciseChooser.SELECTED_EXERCISE && exercise.getExercise_mode() == 1)
-          poseTimers.add(new PoseTimer(exercise.getPose_key()));
-      }
+      if (ExerciseChooser.SELECTED_EXERCISE.getExercise_mode() == 0)
+        repCounters.add(new RepetitionCounter(ExerciseChooser.SELECTED_EXERCISE.getPose_key()));
+      else if (ExerciseChooser.SELECTED_EXERCISE.getExercise_mode() == 1)
+        poseTimers.add(new PoseTimer(ExerciseChooser.SELECTED_EXERCISE.getPose_key()));
+      else explorer_mode = true;
     }
   }
 
@@ -114,10 +114,8 @@ public class PoseClassifierProcessor {
         }
       }
 
-      String maxConfidenceClass = classification.getMaxConfidenceClass();
-      
       for (PoseTimer poseTimer : poseTimers) {
-        poseTimer.setCondition(maxConfidenceClass.equals(poseTimer.getClassName()));
+        poseTimer.setPoseConfidence(classification);
         poseTimer.startTimer();
         lastRepResult = String.format(
                 Locale.US, "%s : %d seconds", poseTimer.getClassName(), poseTimer.getTimerValue());
@@ -126,15 +124,19 @@ public class PoseClassifierProcessor {
       result.add(lastRepResult);
     }
 
+    String maxConfidenceClass = classification.getMaxConfidenceClass();
+    String classToShow = explorer_mode ?
+            maxConfidenceClass : ExerciseChooser.SELECTED_EXERCISE.getPose_key();
+
     // Add maxConfidence class of current frame to result if pose is found.
     if (!pose.getAllPoseLandmarks().isEmpty()) {
-      String maxConfidenceClassResult = String.format(
+      String confidenceClassResult = String.format(
           Locale.US,
           "%s : %.2f confidence",
-          ExerciseChooser.SELECTED_EXERCISE.getPose_key(),
-          classification.getClassConfidence(ExerciseChooser.SELECTED_EXERCISE.getPose_key())
+              classToShow,
+          classification.getClassConfidence(classToShow)
               / poseClassifier.confidenceRange());
-      result.add(maxConfidenceClassResult);
+      result.add(confidenceClassResult);
     }
 
     return result;

@@ -2,12 +2,11 @@ package com.google.mlkit.vision.posedetection.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
+
 import com.google.mlkit.vision.R;
 import com.google.mlkit.vision.pose.PoseDetectorOptionsBase;
 import com.google.mlkit.vision.pose.accurate.AccuratePoseDetectorOptions;
 import com.google.mlkit.vision.pose.defaults.PoseDetectorOptions;
-import com.google.mlkit.vision.posedetection.posedetector.PoseClass;
 
 public class PreferenceUtils {
   public static boolean preferGPUForPoseDetection = true;

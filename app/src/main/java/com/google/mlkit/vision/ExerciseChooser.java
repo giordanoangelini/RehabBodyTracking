@@ -17,7 +17,7 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.mlkit.vision.posedetection.posedetector.PoseClass;
+import com.google.mlkit.vision.posedetection.posedetector.ExerciseClass;
 
 /** Demo app chooser which allows you pick from all available testing Activities. */
 public final class ExerciseChooser extends AppCompatActivity
@@ -25,14 +25,18 @@ public final class ExerciseChooser extends AppCompatActivity
   private static final String TAG = "ChooserActivity";
 
   // 0 for reps - 1 for hold
-  public static final PoseClass[] EXERCISE_LIST = new PoseClass[]{
-          new PoseClass("squats_down", 0, R.string.pose_detection_squats_title, R.string.pose_detection_squats_description),
-          new PoseClass("pushups_down", 0, R.string.pose_detection_pushups_title, R.string.pose_detection_pushups_description),
-          new PoseClass("squats_down", 1, R.string.pose_detection_squats_hold_title, R.string.pose_detection_squats_hold_description),
-          new PoseClass("pushups_down", 1, R.string.pose_detection_pushups_hold_title, R.string.pose_detection_pushups_hold_description)
+  public static final ExerciseClass[] EXERCISE_LIST = new ExerciseClass[]{
+          new ExerciseClass("squats_down", 0, R.string.pose_detection_squats_title, R.string.pose_detection_squats_description),
+          new ExerciseClass("pushups_down", 0, R.string.pose_detection_pushups_title, R.string.pose_detection_pushups_description),
+          new ExerciseClass("squats_down", 1, R.string.pose_detection_squats_hold_title, R.string.pose_detection_squats_hold_description),
+          new ExerciseClass("pushups_down", 1, R.string.pose_detection_pushups_hold_title, R.string.pose_detection_pushups_hold_description),
+
+          new ExerciseClass("sium_end", 1, R.string.pose_detection_sium_title, R.string.pose_detection_sium_description),
+
+          new ExerciseClass("explorer", 2, R.string.pose_detection_explorer_title, R.string.pose_detection_explorer_description)
   };
 
-  public static PoseClass SELECTED_EXERCISE;
+  public static ExerciseClass SELECTED_EXERCISE;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -76,12 +80,12 @@ public final class ExerciseChooser extends AppCompatActivity
     startActivity(new Intent(this, LivePreviewActivity.class));
   }
 
-  private static class MyArrayAdapter extends ArrayAdapter<PoseClass> {
+  private static class MyArrayAdapter extends ArrayAdapter<ExerciseClass> {
 
     private final Context context;
-    private final PoseClass[] classes;
+    private final ExerciseClass[] classes;
 
-    MyArrayAdapter(Context context, int resource, PoseClass[] objects) {
+    MyArrayAdapter(Context context, int resource, ExerciseClass[] objects) {
       super(context, resource,objects);
       this.context = context;
       classes = objects;
