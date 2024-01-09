@@ -11,7 +11,6 @@ import com.google.mlkit.vision.posedetection.graphic.GraphicOverlay;
 import com.google.mlkit.vision.posedetection.graphic.GraphicOverlay.Graphic;
 import com.google.mlkit.vision.pose.Pose;
 import com.google.mlkit.vision.pose.PoseLandmark;
-import com.google.mlkit.vision.posedetection.utils.PreferenceUtils;
 
 import java.util.List;
 import java.util.Locale;
@@ -77,6 +76,17 @@ public class PoseGraphic extends Graphic {
     if (landmarks.isEmpty()) {
       return;
     }
+
+    // Draw Rectangle
+    Paint paint = new Paint();
+    paint.setColor(Color.BLACK);
+    canvas.drawRect(
+            0,
+            canvas.getHeight() - 300,
+            canvas.getWidth(),
+            canvas.getHeight(),
+            paint
+    );
 
     // Draw pose classification text.
     float classificationX = POSE_CLASSIFICATION_TEXT_SIZE * 0.5f;
