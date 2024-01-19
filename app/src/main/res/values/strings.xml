@@ -11,12 +11,12 @@
 
     <!-- EXERCISES STRINGS -->
     <string name="pose_detection_squats_title">Squats</string>
-    <string name="pose_detection_squats_description">Some description</string>
+    <string name="pose_detection_squats_description">Test detection for squat pose</string>
     <string name="pose_detection_pushups_title">Pushups</string>
-    <string name="pose_detection_pushups_description">Some description</string>
+    <string name="pose_detection_pushups_description">Test detection for pushup pose</string>
 
-    <string name="pose_detection_sium_title">SIUUUUM</string>
-    <string name="pose_detection_sium_description"> </string>
+    <string name="pose_detection_sium_title">SIUM</string>
+    <string name="pose_detection_sium_description">Test detection for Sium pose</string>
 
     <string name="exercise_mode_reps">Reps</string>
     <string name="exercise_mode_hold">Hold</string>
