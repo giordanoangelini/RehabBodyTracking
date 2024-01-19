@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This ML Kit app demonstrates how to use and integrate vision based ML Kit body tracking features into your app.
+This ML Kit app demonstrates how to use and integrate vision based ML Kit Pose Detection features into your app.
 
 ## Getting Started
 
