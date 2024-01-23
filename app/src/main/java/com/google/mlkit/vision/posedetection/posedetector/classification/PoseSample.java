@@ -16,12 +16,12 @@ public class PoseSample {
 
   private final String name;
   private final String className;
-  private final List<PointF3D> embedding;
+  private final List<PointF3D> normalized_sample;
 
   public PoseSample(String name, String className, List<PointF3D> landmarks) {
     this.name = name;
     this.className = className;
-    this.embedding = PoseEmbedding.getPoseEmbedding(landmarks);
+    this.normalized_sample = PoseNormalization.getNormalizedPose(landmarks);
   }
 
   public String getName() {
@@ -32,8 +32,8 @@ public class PoseSample {
     return className;
   }
 
-  public List<PointF3D> getEmbedding() {
-    return embedding;
+  public List<PointF3D> getNormalizedSample() {
+    return normalized_sample;
   }
 
   public static PoseSample getPoseSample(String csvLine, String separator) {

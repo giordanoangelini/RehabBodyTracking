@@ -9,18 +9,49 @@ import static com.google.mlkit.vision.posedetection.posedetector.classification.
 import com.google.mlkit.vision.common.PointF3D;
 import com.google.mlkit.vision.pose.PoseLandmark;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 /**
  * Generates embedding for given list of Pose landmarks.
  */
-public class PoseEmbedding {
+public class PoseNormalization {
   // Multiplier to apply to the torso to get minimal body size. Picked this by experimentation.
   private static final float TORSO_MULTIPLIER = 2.5f;
 
-  public static List<PointF3D> getPoseEmbedding(List<PointF3D> landmarks) {
-    List<PointF3D> normalizedLandmarks = normalize(landmarks);
-    return getEmbedding(normalizedLandmarks);
+  public static final ArrayList<Integer> filterList = new ArrayList<>(Arrays.asList(
+          PoseLandmark.NOSE,
+          PoseLandmark.LEFT_EYE_INNER,
+          PoseLandmark.LEFT_EYE,
+          PoseLandmark.LEFT_EYE_OUTER,
+          PoseLandmark.RIGHT_EYE_INNER,
+          PoseLandmark.RIGHT_EYE,
+          PoseLandmark.RIGHT_EYE_OUTER,
+          PoseLandmark.LEFT_EAR,
+          PoseLandmark.RIGHT_EAR,
+          PoseLandmark.LEFT_MOUTH,
+          PoseLandmark.RIGHT_MOUTH,
+          PoseLandmark.LEFT_PINKY,
+          PoseLandmark.RIGHT_PINKY,
+          PoseLandmark.LEFT_INDEX,
+          PoseLandmark.RIGHT_INDEX,
+          PoseLandmark.LEFT_THUMB,
+          PoseLandmark.RIGHT_THUMB
+  ));
+
+  public static List<PointF3D> getNormalizedPose(List<PointF3D> landmarks) {
+    return filterPoints(normalize(landmarks));
+  }
+
+  private static <T> List<T> filterPoints(List<T> landmarks) {
+    for (int point: filterList) {
+      landmarks.set(point, null);
+    }
+    return landmarks.stream()
+            .filter(Objects::nonNull)
+            .collect(Collectors.toList());
   }
 
   private static List<PointF3D> normalize(List<PointF3D> landmarks) {
@@ -44,15 +75,7 @@ public class PoseEmbedding {
     PointF3D hipsCenter = average(
         landmarks.get(PoseLandmark.LEFT_HIP), landmarks.get(PoseLandmark.RIGHT_HIP));
 
-    PointF3D shouldersCenter = average(
-        landmarks.get(PoseLandmark.LEFT_SHOULDER),
-        landmarks.get(PoseLandmark.RIGHT_SHOULDER));
-
-    float torsoSize = l2Norm2D(subtract(hipsCenter, shouldersCenter));
-
-    float maxDistance = torsoSize * TORSO_MULTIPLIER;
-    // torsoSize * TORSO_MULTIPLIER is the floor we want based on experimentation but actual size
-    // can be bigger for a given pose depending on extension of limbs etc so we calculate that.
+    float maxDistance = 0;
     for (PointF3D landmark : landmarks) {
       float distance = l2Norm2D(subtract(hipsCenter, landmark));
       if (distance > maxDistance) {
@@ -122,5 +145,5 @@ public class PoseEmbedding {
     return embedding;
   }
 
-  private PoseEmbedding() {}
+  private PoseNormalization() {}
 }

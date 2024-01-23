@@ -1,6 +1,6 @@
 package com.google.mlkit.vision.posedetection.posedetector.classification;
 
-import static com.google.mlkit.vision.posedetection.posedetector.classification.PoseEmbedding.getPoseEmbedding;
+import static com.google.mlkit.vision.posedetection.posedetector.classification.PoseNormalization.getNormalizedPose;
 import static com.google.mlkit.vision.posedetection.posedetector.classification.Utils.maxAbs;
 import static com.google.mlkit.vision.posedetection.posedetector.classification.Utils.multiply;
 import static com.google.mlkit.vision.posedetection.posedetector.classification.Utils.multiplyAll;
@@ -9,6 +9,7 @@ import static com.google.mlkit.vision.posedetection.posedetector.classification.
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
+import android.util.Log;
 import android.util.Pair;
 import com.google.mlkit.vision.common.PointF3D;
 import com.google.mlkit.vision.pose.Pose;
@@ -80,9 +81,8 @@ public class PoseClassifier {
     List<PointF3D> flippedLandmarks = new ArrayList<>(landmarks);
     multiplyAll(flippedLandmarks, PointF3D.from(-1, 1, 1));
 
-    List<PointF3D> embedding = getPoseEmbedding(landmarks);
-    List<PointF3D> flippedEmbedding = getPoseEmbedding(flippedLandmarks);
-
+    List<PointF3D> n_landmarks = getNormalizedPose(landmarks);
+    List<PointF3D> n_flippedLandmarks = getNormalizedPose(flippedLandmarks);
 
     // Classification is done in two stages:
     //  * First we pick top-K samples by MAX distance. It allows to remove samples that are almost
@@ -95,21 +95,21 @@ public class PoseClassifier {
         maxDistanceTopK, (o1, o2) -> -Float.compare(o1.second, o2.second));
     // Retrieve top K poseSamples by least distance to remove outliers.
     for (PoseSample poseSample : poseSamples) {
-      List<PointF3D> sampleEmbedding = poseSample.getEmbedding();
+      List<PointF3D> n_sample = poseSample.getNormalizedSample();
 
       float originalMax = 0;
       float flippedMax = 0;
-      for (int i = 0; i < embedding.size(); i++) {
+      for (int i = 0; i < n_landmarks.size(); i++) {
         originalMax =
             max(
                 originalMax,
-                maxAbs(multiply(subtract(embedding.get(i), sampleEmbedding.get(i)), axesWeights)));
+                maxAbs(multiply(subtract(n_landmarks.get(i), n_sample.get(i)), axesWeights)));
         flippedMax =
             max(
                 flippedMax,
                 maxAbs(
                     multiply(
-                        subtract(flippedEmbedding.get(i), sampleEmbedding.get(i)), axesWeights)));
+                        subtract(n_flippedLandmarks.get(i), n_sample.get(i)), axesWeights)));
       }
       // Set the max distance as min of original and flipped max distance.
       maxDistances.add(new Pair<>(poseSample, min(originalMax, flippedMax)));
@@ -125,18 +125,18 @@ public class PoseClassifier {
     // Retrive top K poseSamples by least mean distance to remove outliers.
     for (Pair<PoseSample, Float> sampleDistances : maxDistances) {
       PoseSample poseSample = sampleDistances.first;
-      List<PointF3D> sampleEmbedding = poseSample.getEmbedding();
+      List<PointF3D> n_sample = poseSample.getNormalizedSample();
 
       float originalSum = 0;
       float flippedSum = 0;
-      for (int i = 0; i < embedding.size(); i++) {
+      for (int i = 0; i < n_landmarks.size(); i++) {
         originalSum += sumAbs(multiply(
-            subtract(embedding.get(i), sampleEmbedding.get(i)), axesWeights));
+            subtract(n_landmarks.get(i), n_sample.get(i)), axesWeights));
         flippedSum += sumAbs(
-            multiply(subtract(flippedEmbedding.get(i), sampleEmbedding.get(i)), axesWeights));
+            multiply(subtract(n_flippedLandmarks.get(i), n_sample.get(i)), axesWeights));
       }
       // Set the mean distance as min of original and flipped mean distances.
-      float meanDistance = min(originalSum, flippedSum) / (embedding.size() * 2);
+      float meanDistance = min(originalSum, flippedSum) / (n_landmarks.size() * 2);
       meanDistances.add(new Pair<>(poseSample, meanDistance));
       // We only want to retain top k so pop the highest mean distance.
       if (meanDistances.size() > meanDistanceTopK) {
