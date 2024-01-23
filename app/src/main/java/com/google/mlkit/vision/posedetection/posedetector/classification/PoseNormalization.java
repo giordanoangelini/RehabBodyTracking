@@ -45,11 +45,12 @@ public class PoseNormalization {
     return filterPoints(normalize(landmarks));
   }
 
-  private static <T> List<T> filterPoints(List<T> landmarks) {
+  public static <T> List<T> filterPoints(List<T> landmarks) {
+    List<T> new_landmarks = new ArrayList<>(landmarks);
     for (int point: filterList) {
-      landmarks.set(point, null);
+      new_landmarks.set(point, null);
     }
-    return landmarks.stream()
+    return new_landmarks.stream()
             .filter(Objects::nonNull)
             .collect(Collectors.toList());
   }
@@ -59,6 +60,7 @@ public class PoseNormalization {
     // Normalize translation.
     PointF3D center = average(
         landmarks.get(PoseLandmark.LEFT_HIP), landmarks.get(PoseLandmark.RIGHT_HIP));
+
     subtractAll(center, normalizedLandmarks);
 
     // Normalize scale.
