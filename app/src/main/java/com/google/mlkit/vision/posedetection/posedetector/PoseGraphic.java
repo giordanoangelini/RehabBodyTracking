@@ -6,26 +6,22 @@ import static java.lang.Math.min;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.util.Log;
 
 import com.google.mlkit.vision.common.PointF3D;
 import com.google.mlkit.vision.posedetection.graphic.GraphicOverlay;
 import com.google.mlkit.vision.posedetection.graphic.GraphicOverlay.Graphic;
 import com.google.mlkit.vision.pose.Pose;
 import com.google.mlkit.vision.pose.PoseLandmark;
-import com.google.mlkit.vision.posedetection.posedetector.classification.PoseNormalization;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 /** Draw the detected pose in preview. */
 public class PoseGraphic extends Graphic {
 
-  private static final float DOT_RADIUS = 8.0f;
+  private static final float DOT_RADIUS = 20.0f;
   private static final float IN_FRAME_LIKELIHOOD_TEXT_SIZE = 30.0f;
   private static final float STROKE_WIDTH = 10.0f;
   private static final float POSE_CLASSIFICATION_TEXT_SIZE = 60.0f;
@@ -43,6 +39,30 @@ public class PoseGraphic extends Graphic {
   private final Paint leftPaint;
   private final Paint rightPaint;
   private final Paint whitePaint;
+
+  private static final ArrayList<Integer> displayList = new ArrayList<>(Arrays.asList(
+          PoseLandmark.NOSE,
+          PoseLandmark.LEFT_EYE_INNER,
+          PoseLandmark.LEFT_EYE,
+          PoseLandmark.LEFT_EYE_OUTER,
+          PoseLandmark.RIGHT_EYE_INNER,
+          PoseLandmark.RIGHT_EYE,
+          PoseLandmark.RIGHT_EYE_OUTER,
+          PoseLandmark.LEFT_EAR,
+          PoseLandmark.RIGHT_EAR,
+          PoseLandmark.LEFT_MOUTH,
+          PoseLandmark.RIGHT_MOUTH,
+          PoseLandmark.LEFT_PINKY,
+          PoseLandmark.RIGHT_PINKY,
+          PoseLandmark.LEFT_INDEX,
+          PoseLandmark.RIGHT_INDEX,
+          PoseLandmark.LEFT_THUMB,
+          PoseLandmark.RIGHT_THUMB,
+          PoseLandmark.LEFT_HEEL,
+          PoseLandmark.RIGHT_HEEL,
+          PoseLandmark.LEFT_FOOT_INDEX,
+          PoseLandmark.RIGHT_FOOT_INDEX
+  ));
 
   PoseGraphic(
       GraphicOverlay overlay,
@@ -109,7 +129,7 @@ public class PoseGraphic extends Graphic {
     // Draw all the points
     int index = 0;
     for (PoseLandmark landmark : landmarks) {
-      if (PoseNormalization.filterList.contains(index++)) continue;
+      if (displayList.contains(index++)) continue;
       drawPoint(canvas, landmark, whitePaint);
       if (visualizeZ && rescaleZForVisualization) {
         zMin = min(zMin, landmark.getPosition3D().getZ());
@@ -151,11 +171,11 @@ public class PoseGraphic extends Graphic {
     PoseLandmark rightIndex = pose.getPoseLandmark(PoseLandmark.RIGHT_INDEX);
     PoseLandmark leftThumb = pose.getPoseLandmark(PoseLandmark.LEFT_THUMB);
     PoseLandmark rightThumb = pose.getPoseLandmark(PoseLandmark.RIGHT_THUMB);
-     */
     PoseLandmark leftHeel = pose.getPoseLandmark(PoseLandmark.LEFT_HEEL);
     PoseLandmark rightHeel = pose.getPoseLandmark(PoseLandmark.RIGHT_HEEL);
     PoseLandmark leftFootIndex = pose.getPoseLandmark(PoseLandmark.LEFT_FOOT_INDEX);
     PoseLandmark rightFootIndex = pose.getPoseLandmark(PoseLandmark.RIGHT_FOOT_INDEX);
+     */
 
     /* Face
     drawLine(canvas, nose, lefyEyeInner, whitePaint);
@@ -183,9 +203,9 @@ public class PoseGraphic extends Graphic {
     drawLine(canvas, leftWrist, leftPinky, leftPaint);
     drawLine(canvas, leftWrist, leftIndex, leftPaint);
     drawLine(canvas, leftIndex, leftPinky, leftPaint);
-     */
     drawLine(canvas, leftAnkle, leftHeel, leftPaint);
     drawLine(canvas, leftHeel, leftFootIndex, leftPaint);
+     */
 
     // Right body
     drawLine(canvas, rightShoulder, rightElbow, rightPaint);
@@ -198,15 +218,15 @@ public class PoseGraphic extends Graphic {
     drawLine(canvas, rightWrist, rightPinky, rightPaint);
     drawLine(canvas, rightWrist, rightIndex, rightPaint);
     drawLine(canvas, rightIndex, rightPinky, rightPaint);
-     */
     drawLine(canvas, rightAnkle, rightHeel, rightPaint);
     drawLine(canvas, rightHeel, rightFootIndex, rightPaint);
+     */
 
     // Draw inFrameLikelihood for all points
     if (showInFrameLikelihood && !hideBodyLines) {
       index = 0;
       for (PoseLandmark landmark : landmarks) {
-        if (PoseNormalization.filterList.contains(index++)) continue;
+        if (displayList.contains(index++)) continue;
         canvas.drawText(
             String.format(Locale.US, "%.2f", landmark.getInFrameLikelihood()),
             translateX(landmark.getPosition().x),

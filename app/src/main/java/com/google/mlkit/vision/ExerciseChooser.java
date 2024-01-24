@@ -23,12 +23,24 @@ import android.widget.ListView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
+import java.util.ArrayList;
+
 import com.google.mlkit.vision.posedetection.posedetector.ExerciseClass;
 
 /** Demo app chooser which allows you pick from all available testing Activities. */
 public final class ExerciseChooser extends AppCompatActivity
         implements AdapterView.OnItemClickListener, PopupMenu.OnMenuItemClickListener {
   private static final String TAG = "ChooserActivity";
+  private static final int PERMISSION_REQUESTS = 1;
+  private static final String[] REQUIRED_RUNTIME_PERMISSIONS = {
+          Manifest.permission.CAMERA
+  };
 
   public static final ExerciseClass[] EXERCISE_LIST = new ExerciseClass[]{
           new ExerciseClass("squats_down", R.string.pose_detection_squats_title, R.string.pose_detection_squats_description),
@@ -42,6 +54,10 @@ public final class ExerciseChooser extends AppCompatActivity
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+
+    if (!allRuntimePermissionsGranted()) {
+      getRuntimePermissions();
+    }
 
     if (BuildConfig.DEBUG) {
       StrictMode.setThreadPolicy(
@@ -127,4 +143,37 @@ public final class ExerciseChooser extends AppCompatActivity
       return view;
     }
   }
+
+  private boolean allRuntimePermissionsGranted() {
+    for (String permission : REQUIRED_RUNTIME_PERMISSIONS) {
+      if (isPermissionDenied(this, permission)) return false;
+    }
+    return true;
+  }
+
+  private void getRuntimePermissions() {
+    ArrayList<String> permissionsToRequest = new ArrayList<>();
+    for (String permission : REQUIRED_RUNTIME_PERMISSIONS) {
+      if (isPermissionDenied(this, permission)) {
+        permissionsToRequest.add(permission);
+      }
+    }
+    if (!permissionsToRequest.isEmpty()) {
+      ActivityCompat.requestPermissions(
+              this,
+              permissionsToRequest.toArray(new String[0]),
+              PERMISSION_REQUESTS
+      );
+    }
+  }
+
+  private boolean isPermissionDenied(Context context, String permission) {
+    if (ContextCompat.checkSelfPermission(context, permission) == PackageManager.PERMISSION_GRANTED) {
+      Log.i(TAG, "Permission granted: " + permission);
+      return false;
+    }
+    Log.i(TAG, "Permission NOT granted: " + permission);
+    return true;
+  }
 }
+

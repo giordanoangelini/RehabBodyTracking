@@ -18,10 +18,8 @@ import java.util.stream.Collectors;
  * Generates embedding for given list of Pose landmarks.
  */
 public class PoseNormalization {
-  // Multiplier to apply to the torso to get minimal body size. Picked this by experimentation.
-  private static final float TORSO_MULTIPLIER = 2.5f;
 
-  public static final ArrayList<Integer> filterList = new ArrayList<>(Arrays.asList(
+  private static final ArrayList<Integer> filterList = new ArrayList<>(Arrays.asList(
           PoseLandmark.NOSE,
           PoseLandmark.LEFT_EYE_INNER,
           PoseLandmark.LEFT_EYE,
@@ -45,7 +43,7 @@ public class PoseNormalization {
     return filterPoints(normalize(landmarks));
   }
 
-  public static <T> List<T> filterPoints(List<T> landmarks) {
+  private static <T> List<T> filterPoints(List<T> landmarks) {
     List<T> new_landmarks = new ArrayList<>(landmarks);
     for (int point: filterList) {
       new_landmarks.set(point, null);

@@ -2,7 +2,6 @@ package com.google.mlkit.vision.posedetection.posedetector.classification;
 
 import com.google.mlkit.vision.ExerciseChooser;
 import com.google.mlkit.vision.R;
-import com.google.mlkit.vision.posedetection.posedetector.ExerciseClass;
 import android.content.Context;
 import android.os.Looper;
 import android.util.Log;
@@ -110,7 +109,7 @@ public class PoseClassifierProcessor {
         int repsAfter = repCounter.addClassificationResult(classification);
         if (repsAfter > repsBefore) {
           lastRepResult = String.format(
-              Locale.US, "%s : %d reps", repCounter.getClassName(), repsAfter);
+              Locale.US, "%d reps", repsAfter);
           break;
         }
       }
@@ -119,7 +118,7 @@ public class PoseClassifierProcessor {
         poseTimer.setPoseConfidence(classification);
         poseTimer.startTimer();
         lastRepResult = String.format(
-                Locale.US, "%s : %d seconds", poseTimer.getClassName(), poseTimer.getTimerValue());
+                Locale.US, "%d seconds", poseTimer.getTimerValue());
         }
 
       result.add(lastRepResult);

@@ -10,7 +10,7 @@ import com.google.mlkit.vision.pose.defaults.PoseDetectorOptions;
 
 public class PreferenceUtils {
   public static boolean preferGPUForPoseDetection = true;
-  public static boolean showPoseDetectionInFrameLikelihood = true;
+  public static boolean showPoseDetectionInFrameLikelihood = false;
   public static boolean poseDetectionVisualizeZ = true;
   public static boolean poseDetectionRescaleZForVisualization = true;
   public static boolean poseDetectionRunClassification = true;
